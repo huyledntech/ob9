@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'slot-page'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main slot-page">
+      @@include('../components/base/navbar-child.html', {
+        title: 'PP_SLOTS', 
+        back_url: '/', 
+        nav_expand_url: '../home/slot-nav-expand.html',
+        right_expand_icon: '../home/slot-nav-right-icon.html',
+        right_expand_icon_url: '#',
+      })
+      <div class="slot-page__content container-fluid">
+
+        <div class="tab-content slot-page__content__tab">
+          <div class="tab-pane fade slot-page__content__tab__pane show active" id="slot-page-all" role="tabpanel" aria-labelledby="pills-home-tab">
+            @@include('../components/home/slot-page/all.html')
+          </div>
+          <div class="tab-pane fade slot-page__content__tab__pane" id="slot-page-hot" role="tabpanel" aria-labelledby="slot-page-hot-tab">
+            HOT CONTENT
+          </div>
+          <div class="tab-pane fade slot-page__content__tab__pane" id="slot-page-latest" role="tabpanel" aria-labelledby="slot-page-latest-tab">
+            LATEST CONTENT
+          </div>
+          <div class="tab-pane fade slot-page__content__tab__pane" id="slot-page-classic" role="tabpanel" aria-labelledby="slot-page-classic-tab">
+            CLASSIC CONTENT
+          </div>
+        </div>
+        
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 0})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.slot-page {
+  background-color: #F2F2F2;
+  min-height: 100vh;
+
+  .slot-page-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    place-content: space-around;
+    place-items: center;
+    width: 100%;
+    padding: 0 15px;
+    gap: 25px;
+
+    &::-webkit-scrollbar {
+      height: 0;
+      background: gray;
+    }
+
+    .nav-item {
+      .nav-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 2px solid transparent;
+        border-radius: 0 !important;
+
+        &.active {
+          background: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #4E7FFF;
+          border-color: #4E7FFF;
+        }
+      }
+    }
+
+  }
+
+  &__content {
+    padding-top: 40px;
+
+    &__tab {
+      &__pane {
+        .row {
+          margin-left: -8px;
+          margin-right: -8px;
+
+          .slot-page_items {
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-bottom: 15px;
+
+            &__item {
+              background: #FFFFFF;
+
+              &__img {
+                width: 100%;
+              }
+
+              &__content {
+                padding: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;
+                display: flex;
+                place-content: space-between;
+                place-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

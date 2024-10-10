@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'MANAGE BANK ACCOUNT'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main manage-bank-account ">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Manage_Bank_Account'})
+      <div class="manage-bank-account__content container-fluid">
+
+        <div class="manage-bank-account__content__img">
+          <img src="assets/images/wallet/no-bank.png" />
+        </div>
+        <a href="/wallet/manage-add-bank-account.html" class="manage-bank-account__content__add-btn" data-i18n="Add_bank_account">
+          + Add bank account
+        </a>
+        <div class="manage-bank-account__content__description" data-i18n="Up_to_10_bank_accounts_can_be_added"></div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

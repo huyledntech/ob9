@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Betting Record'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main betting-record">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Betting_Record_title',
+        nav_expand_url: '../my-account/betting-record-nav-expand.html',
+        nav_expand_active_btn: 1,
+        nav_expand_active_btn_text: 'Settled'
+      })
+      <div class="betting-record__content container-fluid betting-record-items">
+
+        <div class="title">02-23-2022</div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title" data-i18n="EVO_CLUB"></h3>
+            <div class="items__content__info" data-i18n="Betting_Record_page.Baccarat"></div>
+            <div class="items__content__subtitle mb-0" style="border-bottom: none">
+              <span><span data-i18n="Betting_Record_page.Turnovers"></span> (MYR):  40.00</span>
+            </div>
+            <div class="items__content__subtitle">
+              <span><span data-i18n="Betting_Record_page.Realbet"></span> (MYR):  40.00</span>
+              <span><span data-i18n="Betting_Record_page.Win_Lose"></span> (MYR):  <span class="text-danger">-40.00</span></span>
+            </div>
+            <div class="items__content__description">
+              <div>
+                <span data-i18n="Betting_Record_page.Betslip_ID"></span>: 12345
+              </div>
+              <div>
+                <span data-i18n="Betting_Record_page.Betting_time"></span>: 2022-02-23 10:36:08
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title" data-i18n="SEXY_CLUB"></h3>
+            <div class="items__content__info" data-i18n="Betting_Record_page.Baccarat"></div>
+            <div class="items__content__subtitle mb-0" style="border-bottom: none">
+              <span><span data-i18n="Betting_Record_page.Turnovers"></span> (MYR):  40.00</span>
+            </div>
+            <div class="items__content__subtitle">
+              <span><span data-i18n="Betting_Record_page.Realbet"></span> (MYR):  40.00</span>
+              <span><span data-i18n="Betting_Record_page.Win_Lose"></span> (MYR):  <span class="text-success">40.00</span></span>
+            </div>
+            <div class="items__content__description">
+              <div>
+                <span data-i18n="Betting_Record_page.Betslip_ID"></span>: 12345
+              </div>
+              <div>
+                <span data-i18n="Betting_Record_page.Betting_time"></span>: 2022-02-23 10:36:08
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title mt-4">02-24-2022</div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title" data-i18n="IGKBET_SPORTS"></h3>
+            <div class="items__content__info" data-i18n="Betting_Record_page.Baccarat"></div>
+            <div class="items__content__subtitle mb-0" style="border-bottom: none">
+              <span><span data-i18n="Betting_Record_page.Turnovers"></span> (MYR):  40.00</span>
+            </div>
+            <div class="items__content__subtitle">
+              <span><span data-i18n="Betting_Record_page.Realbet"></span> (MYR):  40.00</span>
+              <span><span data-i18n="Betting_Record_page.Win_Lose"></span> (MYR):  <span class="text-danger">-40.00</span></span>
+            </div>
+            <div class="items__content__description">
+              <div>
+                <span data-i18n="Betting_Record_page.Betslip_ID"></span>: 12345
+              </div>
+              <div>
+                <span data-i18n="Betting_Record_page.Betting_time"></span>: 2022-02-23 10:36:08
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title" data-i18n="QTECH_SLOTS"></h3>
+            <div class="items__content__info" data-i18n="Betting_Record_page.Baccarat"></div>
+            <div class="items__content__subtitle mb-0" style="border-bottom: none">
+              <span><span data-i18n="Betting_Record_page.Turnovers"></span> (MYR):  40.00</span>
+            </div>
+            <div class="items__content__subtitle">
+              <span><span data-i18n="Betting_Record_page.Realbet"></span> (MYR):  40.00</span>
+              <span><span data-i18n="Betting_Record_page.Win_Lose"></span> (MYR):  <span class="text-success">40.00</span></span>
+            </div>
+            <div class="items__content__description">
+              <div>
+                <span data-i18n="Betting_Record_page.Betslip_ID"></span>: 12345
+              </div>
+              <div>
+                <span data-i18n="Betting_Record_page.Betting_time"></span>: 2022-02-23 10:36:08
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

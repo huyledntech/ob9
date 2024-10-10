@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Universal'})
+  <body>
+    <!-- Content -->
+    <section class="universal">
+      <video autoplay muted loop playsinline>
+        <source src="assets//images/universal-bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container-fluid universal__content">
+        <a href="/access-denied.html" class="universal__content__logo" data-i18n="universal_logo_img"></a>
+        <div id="selectLanguage">
+          <div>
+            <img src="assets//images/language/1.png" />
+            <div class="title" data-i18n="universal_page.Malaysia"></div>
+            <div class="bg"></div>
+          </div>
+          <div>
+            <img src="assets//images/language/2.png" />
+            <div class="title" data-i18n="universal_page.Singapore"></div>
+            <div class="bg"></div>
+          </div>
+          <div>
+            <img src="assets//images/language/3.png" />
+            <div class="title" data-i18n="universal_page.Thailand"></div>
+            <div class="bg"></div>
+          </div>
+          <div>
+            <img src="assets//images/language/4.png" />
+            <div class="title" data-i18n="universal_page.Vietnam"></div>
+            <div class="bg"></div>
+          </div>
+          <div>
+            <img src="assets//images/language/5.png" />
+            <div class="title" data-i18n="universal_page.Indonesia"></div>
+            <div class="bg"></div>
+          </div>
+          <div>
+            <img src="assets//images/language/6.png" />
+            <div class="title" data-i18n="universal_page.International"></div>
+            <div class="bg"></div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col universal__content__language" data-language="ZH">
+            <img src="assets//images/language/malaysia.png" />
+            <div class="universal__content__language__title" data-i18n="languages.malaysia">MALAYSIA</div>
+          </div>
+          <div class="col universal__content__language" data-language="ZH">
+            <img src="assets//images/language/singapore.png" />
+            <div class="universal__content__language__title" data-i18n="languages.singapore">SINGAPORE</div>
+          </div>
+          <div class="col universal__content__language" data-language="ZH">
+            <img src="assets//images/language/vietnam.png" />
+            <div class="universal__content__language__title" data-i18n="languages.vietnam">VIETNAM</div>
+          </div>
+          <div class="col universal__content__language" data-language="EN">
+            <img src="assets//images/language/international.png" />
+            <div class="universal__content__language__title" data-i18n="languages.international">INTERNATIONAL</div>
+          </div>
+        </div> -->
+        <div class="play-now">
+          <a href="/login.html" class="btn btn-primary" data-i18n="universal_page.PLAY_NOW"></a>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

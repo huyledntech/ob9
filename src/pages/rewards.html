@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Rewards'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main rewards-block rewards-page">
+      @@include('../components/base/navbar.html')
+
+      <!-- content -->
+      <div class="rewards-page__top-banner d-none d-lg-block" data-i18n="rewards_page.top_banner"></div>
+      <div class="rewards-page__top-banner d-block d-lg-none" data-i18n="rewards_page.top_banner_mobile"></div>
+      <div class="rewards-block__content container my-2 px-4">
+        <!-- My point -->
+        <div class="rewards-block__content__card">
+          <div class="rewards-block__content__card__content">
+            <div class="rewards-block__content__card__content__title">
+              <span data-i18n="rewards_page.my_point"></span>
+            </div>
+            <div class="content py-4 row justify-content-center align-items-center">
+              <div class="col-7">
+                <img src="assets/images/rewards/my-point-card.png" />
+              </div>
+              <div class="col-5 position-relative">
+                <img data-i18n="rewards_page.my_point_current_point" data-i18n-attr="src" src="" />
+                <span class="current-point">9,000 PTS</span>
+              </div>
+            </div>
+            <div class="text-center">
+              <span class="bottom" data-i18n="rewards_page.my_point_bottom"></span>
+            </div>
+          </div>
+        </div>
+        <!-- reward prize -->
+        <div class="rewards-block__content__card style2">
+          <div class="rewards-block__content__card__content">
+            <div class="rewards-block__content__card__content__title">
+              <span data-i18n="rewards_page.reward_prize"></span>
+            </div>
+            <div class="row items p-2 justify-content-center">
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">rolex watch</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item1.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">lv bag</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item2.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeFail" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">usa trip 5 days</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item3.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">shangri la hotel</div>
+                    <div class="item__content__img full-width">
+                      <img src="assets/images/rewards/item4.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>123123 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">genting resort world</div>
+                    <div class="item__content__img full-width">
+                      <img src="assets/images/rewards/item5.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">myr 1,888</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item6.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">myr 1,288</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item6.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">myr 888</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item6.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">myr 388</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item6.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">myr 88</div>
+                    <div class="item__content__img">
+                      <img src="assets/images/rewards/item6.png" />
+                    </div>
+                    <div class="item__content__des">
+                      <span>111891 POINT</span>
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_get" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- more rewards -->
+            <div class="row items p-2 justify-content-center">
+              <!-- item -->
+              <!-- <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title">more reward</div>
+                    <div class="item__content__img my-5">
+                      <img src="assets/images/rewards/item7.png" />
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeSuccess" class="btn">
+                        <img data-i18n="rewards_page.btn_download_blue" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- item -->
+              <div class="col-6">
+                <div class="item">
+                  <div class="item__content">
+                    <div class="item__content__title bg-yellow" data-i18n="rewards_page.more_reward"></div>
+                    <div class="item__content__img my-5">
+                      <img src="assets/images/rewards/item8.png" />
+                    </div>
+                    <div class="item__content__action">
+                      <button data-bs-toggle="modal" data-bs-target="#prizeFail" class="btn">
+                        <img data-i18n="rewards_page.btn_download_yellow" data-i18n-attr="src" src="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- T&c -->
+        <div class="rewards-block__content__card">
+          <div class="rewards-block__content__card__content">
+            <div class="rewards-block__content__card__content__title">
+              <span data-i18n="rewards_page.t_c"></span>
+            </div>
+            <div class="content py-4">
+              <h4 class="mb-4 text-center" data-i18n="rewards_page.t_c_title"></h4>
+              <p data-i18n="rewards_page.t_c_1"></p>
+              <p data-i18n="rewards_page.t_c_2"></p>
+              <p data-i18n="rewards_page.t_c_3"></p>
+              <p data-i18n="rewards_page.t_c_4"></p>
+              <p data-i18n="rewards_page.t_c_5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+
+      <div class="d-block d-lg-none">
+        @@include('../components/base/navbar-bottom.html', {active: -1})
+      </div>
+      
+    </section>
+    <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="prizeSuccess" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-purple">
+            <h3 class="modal-title text-white text-center" id="selectLanguageLabel" data-i18n="rewards_page.Congratulations"></h3>
+          </div>
+          <div class="modal-body">
+            <h4 class="fw-normal text-center" data-i18n="rewards_page.prize_success_des"></h4>
+            <div class="pt-3 text-center">
+              <button class="btn btn-lg btn-primary px-5" data-bs-dismiss="modal" data-i18n="OK"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="prizeFail" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-purple">
+            <h3 class="modal-title text-white text-center" id="selectLanguageLabel" data-i18n="rewards_page.Redeem_Unsuccessful"></h3>
+          </div>
+          <div class="modal-body">
+            <h4 class="fw-normal text-center" data-i18n="rewards_page.prize_fail_des"></h4>
+            <div class="pt-3 text-center">
+              <button class="btn btn-lg btn-primary px-5" data-bs-dismiss="modal" data-i18n="OK"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </script>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

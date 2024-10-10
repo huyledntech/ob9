@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'ADD ADDRESS'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main add-bank-account">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Add_Address'})
+      <div class="add-bank-account__content container-fluid">
+
+        <div class="add-bank-account__content__input pb-5">
+          <div class="items">
+            <label class="form-label" data-i18n="Cryptocurrency"></label>
+            <input type="text" class="form-control" data-i18n="Cryptocurrency" data-i18n-attr="placeholder" placeholder="" value="USDT" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Network"></label>
+            <input type="text" class="form-control" data-i18n="Network" data-i18n-attr="placeholder" placeholder="" value="TRC 20" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Address"></label>
+            <input type="text" class="form-control" data-i18n="Please_enter_Address" data-i18n-attr="placeholder" placeholder="" />
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput4" class="form-label" data-i18n="OTP"></label>
+            <div class="input-group pt-4">
+              <input type="text" class="form-control" value="" data-i18n="OTP_verification" data-i18n-attr="placeholder" autocomplete="off" placeholder="OTP verification">
+              <button class="btn btn-primary" type="button" data-i18n="Send_OTP">Get Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__submit">
+          <!-- <button class="btn btn-primary" data-i18n="SUBMIT" disabled>SUBMIT</button> -->
+          <div class="add-bank-account__content__submit">
+            <a href="/wallet/withdrawal.html" class="btn btn-primary disabled" data-i18n="SUBMIT">SUBMIT</a>
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__help" data-i18n="Need_assistance"></div>
+
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

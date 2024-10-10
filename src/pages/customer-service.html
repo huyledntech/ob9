@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Customer Service'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main help-page help-index customer-service">
+
+      <!-- navbar -->
+      @@include('../components/base/navbar-child.html', {
+        title: 'CUSTOMER_SERVICE',
+        back_url: '/help/',
+        icon_back_white: true,
+      })
+      <!-- navbar -->
+
+
+      <div class="help-page__content">
+        <div class="help-page__content__top">
+          <div class="help-page__content__customer-service-center">
+            <div class="help-page__content__customer-service-center__content">
+              <div class="help-page__content__customer-service-center__content__img">
+                <img src="assets/images/help/help-avatar.png" style="max-width: 65px;" />
+              </div>
+              <div class="help-page__content__customer-service-center__content__text">
+                <h3 data-i18n="customer_service_page.welcome"></h3>
+                <div data-i18n="customer_service_page.We_serve_you_24_hours"></div>
+              </div>
+            </div>
+            <div class="help-page__content__customer-service-center__btn">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactCustomerServiceModal">
+                <img src="assets/images/my-account/service.png" alt="" style="width: 30px">
+                <span data-i18n="customer_service_page.CONTACT_CUSTOMER_SERVICE"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div  class="help-page__content__card tutorial-guides">
+          <div class="title" data-i18n="customer_service_page.Tutorial_Guides"></div>
+          <div class="row content">
+            <a href="/help/user-guide/deposit.html" class="col-3">
+              <img src="assets/images/help/tutorial-guides/1.png" />
+              <div data-i18n="customer_service_page.Deposit_Tutorial"></div>
+            </a>
+            <a href="/help/user-guide/withdrawal.html" class="col-3">
+              <img src="assets/images/help/tutorial-guides/2.png" />
+              <div data-i18n="customer_service_page.Withdrawal_Tutorial"></div>
+            </a>
+            <a href="/help/user-guide/sport-betting-guide.html" class="col-3">
+              <img src="assets/images/help/tutorial-guides/3.png" />
+              <div data-i18n="customer_service_page.Sport_Betting_Guide"></div>
+            </a>
+            <a href="/help/game-guide/" class="col-3">
+              <img src="assets/images/help/tutorial-guides/4.png" />
+              <div data-i18n="customer_service_page.Gameplay_Tutorial"></div>
+            </a>
+          </div>
+        </div>
+
+        <div  class="help-page__content__card faq">
+          <div class="title" data-i18n="customer_service_page.faq"></div>
+          <ul class="content">
+            <li>
+              <a href="#" class="col-3">
+                <div class="img">
+                  <img src="assets/images/help/tutorial-guides/5.png" />
+                </div>
+                <div class="text" data-i18n="help_page.Game_Guide"></div>
+              </a>
+            </li>
+            <li>
+              <a href="/help/game-guide/lottery-guide.html" class="col-3">
+                <div class="img no-border"></div>
+                <div class="text">
+                  <span data-i18n="help_page.Lottery_Guide"></span>
+                  <img class="right" src="assets/images/my-account/right.png">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/help/game-guide/e-sport-guide.html" class="col-3">
+                <div class="img no-border"></div>
+                <div class="text">
+                  <span data-i18n="help_page.E_sport_Guide"></span>
+                  <img class="right" src="assets/images/my-account/right.png">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/help/game-guide/sport-guide.html" class="col-3">
+                <div class="img no-border"></div>
+                <div class="text">
+                  <span data-i18n="help_page.Sport_Guide"></span>
+                  <img class="right" src="assets/images/my-account/right.png">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/help/game-guide/live-casino-guide.html" class="col-3">
+                <div class="img no-border"></div>
+                <div class="text">
+                  <span data-i18n="help_page.Live_Casino_Guide"></span>
+                  <img class="right" src="assets/images/my-account/right.png">
+                </div>
+              </a>
+            </li>
+            <li class="line"></li>
+            <li>
+              <a href="#" class="col-3">
+                <div class="img">
+                  <img src="assets/images/help/tutorial-guides/6.png" />
+                </div>
+                <div class="text" data-i18n="help_page.Contact_Us"></div>
+              </a>
+            </li>
+            <li>
+              <a href="/contact-us.html" class="col-3">
+                <div class="img no-border"></div>
+                <div class="text">
+                  <span data-i18n="customer_service_page.Online_Customer_Service"></span>
+                  <img class="right" src="assets/images/my-account/right.png">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="help-page__content__footer mt-5" data-i18n="help_page.Need_assitance"></div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/help/contact-customer-service-modal.html')
+      <!-- MODAL -->
+
+
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

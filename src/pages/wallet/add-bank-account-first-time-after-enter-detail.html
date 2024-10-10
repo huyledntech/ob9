@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'ADD BANK ACCOUNT'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main add-bank-account">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'ADD_BANK_ACCOUNT'})
+      <div class="add-bank-account__content container-fluid">
+
+        <div class="add-bank-account__content__input">
+          <div class="items">
+            <label class="form-label" data-i18n="Full_Name">Full Name</label>
+            <input type="text" class="form-control" placeholder="" value="TAN MING ZHI" disabled />
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description"></div>
+
+        <div class="add-bank-account__content__input">
+          <div class="add-bank-account__content__input__select-bank" data-bs-toggle="modal" data-bs-target="#selectBankModal">
+            <div class="add-bank-account__content__input__select-bank__input">
+              <div class="add-bank-account__content__input__select-bank__input__label" data-i18n="Bank">Bank</div>
+              <div class="add-bank-account__content__input__select-bank__input__placeholder fw-bold">MAYBANK</div>
+            </div>
+            <img src="assets/images/wallet/deposit/right.png" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Bank_Account_Number">Bank Account Number</label>
+            <input type="text" class="form-control" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" data-i18n-attr="placeholder"  value="112233444058" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Phone_Number">Phone Number</label>
+            <input type="text" class="form-control" data-i18n="wallet_page.add-bank-account.Please_enter_bank_Phone_Number" data-i18n-attr="placeholder" value="0123338888" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Authentication_Number">Authentication Number</label>
+            <div class="input-group">
+              <input type="text" class="form-control" data-i18n="wallet_page.add-bank-account.Please_enter_authentication_code" value="7502" />
+              <span class="input-group-text"><img src="assets/images/wallet/refresh-45.png" width="30px" /></span>
+              <button class="btn btn-primary" type="button" disabled data-i18n="wallet_page.add-bank-account.Request_Code"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description2"></div>
+
+
+        <div class="add-bank-account__content__submit">
+          <a href="/wallet/withdrawal.html" class="btn btn-primary" data-i18n="SUBMIT">SUBMIT</a>
+        </div>
+
+        <div class="add-bank-account__content__help" data-i18n="Need_assistance"></div>
+        
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

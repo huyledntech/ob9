@@ -1,0 +1,13 @@
+<nav class="navbar fixed-top navbar-light nav-child">
+  <div class="container-fluid content @@if (!context.back_url && !context.help_url) {justify-content-center}">
+    <a id="back_url" class="inbox_back" href="@@back_url">
+      <img src="assets/icons/icon_back.png" alt="" />
+    </a>
+    <span class="inbox_close d-none" role="button">
+      <img src="assets/icons/close.svg" alt="" />
+    </span>
+    <div class="title" data-i18n="@@title">@@title</div>
+    <span class="inbox_edit" role="button" data-i18n="inbox_page.edit"></span>
+    <span class="inbox_select_all d-none" role="button" data-i18n="inbox_page.select_all"></span>
+  </div>
+</nav>

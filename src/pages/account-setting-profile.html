@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'PROFILE'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main profile ">
+      @@include('../components/base/navbar-child.html', {back_url: '/account-setting.html', title: 'PROFILE'})
+      <div class="profile__content container-fluid">
+
+        <form>
+          <div class="items">
+            <label for="exampleFormControlInput1" class="form-label" data-i18n="profile.Profile_Picture">Profile Picture</label>
+            <div class="avatar">
+              <div data-bs-toggle="modal" data-bs-target="#selectProfilePictureModal">
+                <img src="assets/images/profile/5.png" />
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput1" class="form-label" data-i18n="profile.Username">Username</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" value="johnny8080">
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput2" class="form-label" data-i18n="profile.Name">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" value="Johnny Tan Ming Zhi">
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput3" class="form-label" data-i18n="profile.Date_of_Birth">Date of Birth</label>
+            <div class="input-group">
+              <input type="email" class="form-control date-picker" id="exampleFormControlInput3" data-i18n="profile.Date_of_Birth_Placeholder" data-i18n-attr="placeholder" placeholder="Add birthdate, Please make sure you’re above 18 years old">
+              <span class="input-group-text" id="basic-addon2"><img src="assets/images/profile/right.png" /></span>
+            </div>
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput4" class="form-label" data-i18n="profile.Phone_Number">Phone Number</label>
+            <input type="email" class="form-control" id="exampleFormControlInput4" value="01288888888">
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput5" class="form-label" data-i18n="profile.Email_Address">Email address</label>
+            <a href="/profile-email-address.html" class="input-group">
+              <input type="email" class="form-control" id="exampleFormControlInput5" readonly data-i18n="profile.Email_address_Placeholder" data-i18n-attr="placeholder" placeholder="For your safety purposes, Please verify your email address">
+              <span class="input-group-text" id="basic-addon2"><img src="assets/images/profile/right.png" /></span>
+            </a>
+          </div>
+        </form>
+
+        <p class="description" data-i18n="profile.description1">For your safety purposes, some informations cannot be edited. </p>
+        <p class="description" data-i18n="profile.description2">Need assistance? Please contact <a href="#">Customer Service</a></p>
+
+        <!-- MODAL -->
+        @@include('../components/select-profile-picture-modal.html')
+
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

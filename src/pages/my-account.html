@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'My Account'})
+  <body>
+    <!-- Content -->
+    <section class="main my-account">
+      <div class="my-account__content">
+        <div class="my-account__content__topcontent px-3">
+
+          <div class="my-account__content__topcontent__top mb-3">
+            <img class="my-account__content__topcontent__top__avatar" src="assets/icons/user-avatar.png" alt="" />
+            <a class="my-account__content__topcontent__top__user-info" href="/profile.html">
+              <div>
+                <h4>
+                  username8080
+                  <img src="assets/images/vip_menu/vip0.png" class="ms-2" width="60px"/>
+                </h4>
+                <div data-i18n="Join_since1"></div>
+              </div>
+              <img src="assets/images/my-account/right-white.png" />
+            </a>
+            <a href="/customer-service.html" class="my-account__content__topcontent__nav">
+              <img src="assets/images/MENU/help.png" alt="" width="25px" />
+            </a>
+          </div>
+
+          <div class="wallet__content__top w-100 mb-3">
+            <div class="w-100">
+              <div data-i18n="Main_Wallet"></div>
+              <h3>MYR 5888.20 <img src="assets/images/new-icons/refresh.png" width="20px" /></h3>
+            </div>
+            <div class="wallet__content__top__icons w-100">
+              <a href="/wallet/deposit.html">
+                <img src="assets/images/MOBILE/deposit.png" />
+                <p data-i18n="Deposit1">Deposit</p>
+              </a>
+              <a href="/wallet/withdrawal.html">
+                <img src="assets/images/new-icons/profile/yuerbaomobile.png" />
+                <p data-i18n="Withdrawal1">Withdrawal</p>
+              </a>
+              <a href="/wallet/transaction-history-rebate.html">
+                <img src="assets/images/new-icons/profile/withdrawal.png" />
+                <p data-i18n="Rebate1">Rebate</p>
+              </a>
+              <a href="/wallet/manage-bank-account.html">
+                <img src="assets/images/MOBILE/vip.png" />
+                <p data-i18n="vip"></p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="benefits">
+            <div class="benefits-title" data-i18n="Welfare_Center_Enjoy_Discounts"></div>
+            <a href="" class="claim-button" data-i18n="Get_Benefits"></a>
+          </div>
+  
+          <div class="my-account__content__topcontent__wallet mb-3">
+            <!-- <div class="my-account__content__topcontent__wallet__top">
+              <a href="/vip/" class="d-flex align-items-center">
+                <img src="assets/images/my-account/vipnew.png" />
+                <span data-i18n="VIP_PRIVILEGE"></span>
+              </a>
+              <a href="/campaign-bonanza/" class="d-flex align-items-center">
+                <img src="assets/images/my-account/giftnew.png" />
+                <span data-i18n="CAMPAIGN_BONANZA"></span>
+              </a>
+            </div> -->
+            <div class="row my-account__content__topcontent__wallet__bottom">
+              <a class="col-3" href="/wallet/transaction-history.html">
+                <img src="assets/images/new-icons/profile/transaction-history.png" />
+                <div data-i18n="Transaction_History"></div>
+              </a>
+              <a class="col-3" href="/my-account/betting-record.html">
+                <img src="assets/images/new-icons/profile/betting-history.png" />
+                <div data-i18n="Betting_Record"></div>
+              </a>
+              <a class="col-3" href="/bonus-history/">
+                <img src="assets/images/new-icons/profile/bonuscenter.png" />
+                <div data-i18n="Bonus_Center1"></div>
+              </a>
+              <a class="col-3" href="/account-setting.html">
+                <img src="assets/images/new-icons/profile/accountmanagement.png" />
+                <div data-i18n="Account_Setting"></div>
+              </a>
+            </div>
+            <div class="row my-account__content__topcontent__wallet__bottom">
+              <a class="col-3" href="/referral-program.html">
+                <img src="assets/images/new-icons/profile/referral-program.png" />
+                <div data-i18n="my_account_page.Referral_Program"></div>
+              </a>
+              <a class="col-3" href="/blog.html">
+                <img src="assets/images/new-icons/profile/blog.png" />
+                <div data-i18n="Blog"></div>
+              </a>
+              <a class="col-3" href="/help/">
+                <img src="assets/images/new-icons/profile/helpcenter.png" />
+                <div data-i18n="my_account_page.Help"></div>
+              </a>
+              <div class="col-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-account__content__promotion mb-3">
+          <img src="assets/images/new-icons/profile/banner.jpg" />
+        </div>
+
+        <ul class="my-account__content__navbar mb-3">
+          <li>
+            <a href="/about-us.html">
+              <div>
+                <div class="icon"><img src="assets/images/new-icons/profile/aboutus.png" /></div>
+                <div data-i18n="menu.about_us"></div>
+              </div>
+              <img src="assets/images/my-account/right.png" />
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/wallet/rebate.html">
+              <div>
+                <div class="icon"><img src="assets/images/new-icons/profile/rebate2.png" /></div>
+                <div data-i18n="rebate"></div>
+              </div>
+              <img src="assets/images/my-account/right.png" />
+            </a>
+          </li> -->
+          <li>
+            <a href="/">
+              <div>
+                <div class="icon"><img src="assets/images/new-icons/profile/openapp.png" /></div>
+                <div data-i18n="Download_OB9_App"></div>
+              </div>
+              <img src="assets/images/my-account/right.png" />
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

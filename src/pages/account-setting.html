@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'ACCOUNT SECURITY'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-setting">
+      @@include('../components/base/navbar-child.html', {back_url: '/my-account.html', title: 'ACCOUNT_SECURITY'})
+      <div class="account-setting__content">
+        <div class="account-setting__content__info">
+          <img src="assets/images/account-setting/safety.png" />
+          <div data-i18n="account_setting_page.info"></div>
+        </div>
+
+        <div class="account-setting__content__card">
+          <div class="list-group list-group-numbered">
+            <a href="/account-setting-profile.html" class="list-group-item">
+              <div>
+                <div class="title">
+                  <span data-i18n="account_setting_page.Complete_Profile"></span>
+                  <div>
+                    <img src="assets/images/account-setting/done.png" />
+                    <img src="assets/images/account-setting/right.png" />
+                  </div>
+                </div>
+                <div class="description" data-i18n="account_setting_page.Complete_Profile_description"></div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div>
+                <div class="title">
+                  <span data-i18n="account_setting_page.Email_Address"></span>
+                  <div>
+                    <img src="assets/images/account-setting/done.png" />
+                    <img src="assets/images/account-setting/right.png" />
+                  </div>
+                </div>
+                <div class="description" data-i18n="account_setting_page.Email_Address_description"></div>
+              </div>
+            </a>
+            <a href="/account-setting-add-bank-account.html" class="list-group-item">
+              <div>
+                <div class="title">
+                  <span data-i18n="account_setting_page.Add_Bank_Account"></span>
+                  <div>
+                    <img src="assets/images/account-setting/warning.png" />
+                    <img src="assets/images/account-setting/right.png" />
+                  </div>
+                </div>
+                <div class="description text-danger" data-i18n="account_setting_page.Add_Bank_Account_description"></div>
+              </div>
+            </a>
+            <a href="/manage-password.html" class="list-group-item">
+              <div>
+                <div class="title">
+                  <span data-i18n="account_setting_page.Manage_Password"></span>
+                  <div>
+                    <img src="assets/images/account-setting/done.png" />
+                    <img src="assets/images/account-setting/right.png" />
+                  </div>
+                </div>
+                <div class="description" data-i18n="account_setting_page.Manage_Password_description"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

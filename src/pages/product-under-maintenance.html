@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Product Under Maintenance'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main access-denied">
+      <div class="access-denied__content">
+        <div class="access-denied__content__logo" data-i18n="product_under_maintenance_page.logo_top"></div>
+        <div class="access-denied__content__image">
+          <img src="assets/images/product-under-maintenance.png" />
+        </div>
+        <div class="access-denied__content__title mb-5" data-i18n="product_under_maintenance_page.Product_Under_Maintenance"></div>
+        <div class="access-denied__content__subtitle" data-i18n="product_under_maintenance_page.subtitle"></div>
+        <div class="access-denied__content__dear" data-i18n="product_under_maintenance_page.dear"></div>
+        <div class="access-denied__content__description" data-i18n="product_under_maintenance_page.description"></div>
+        <div class="access-denied__content__action">
+          <a href="/customer-service.html" class="btn btn-primary" data-i18n="product_under_maintenance_page.Contact_Customer_Service"></a>
+          <a href="/" class="btn btn-outline-primary" data-i18n="product_under_maintenance_page.Back_to_Homepage"></a>
+        </div>
+      </div>
+    </section>
+    @@include('../components/base/footer.html')
+  </body>
+</html>

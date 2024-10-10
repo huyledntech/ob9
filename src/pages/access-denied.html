@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Access Denied'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main access-denied">
+      <div class="access-denied__content">
+        <div class="access-denied__content__logo" data-i18n="product_under_maintenance_page.logo_top"></div>
+        <div class="access-denied__content__image">
+          <img src="assets/images/access-denied.png" />
+        </div>
+        <div class="access-denied__content__title" data-i18n="access_denied_page.Access_Denied"></div>
+        <div class="access-denied__content__subtitle" data-i18n="access_denied_page.subtitle"></div>
+        <div class="access-denied__content__dear" data-i18n="access_denied_page.dear"></div>
+        <div class="access-denied__content__description" data-i18n="access_denied_page.description"></div>
+        <div class="access-denied__content__action">
+          <a href="/customer-service.html" class="btn btn-primary" data-i18n="access_denied_page.Contact_Customer_Service"></a>
+          <a href="/universal.html" class="btn btn-outline-primary" data-i18n="access_denied_page.Change_Region"></a>
+        </div>
+      </div>
+    </section>
+    @@include('../components/base/footer.html')
+  </body>
+</html>

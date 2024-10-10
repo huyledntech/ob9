@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Live Match'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main live-match-block live-match-page">
+      @@include('../components/base/navbar.html')
+      <!-- @@include('../components/base/navbar-child.html', {back_url: '/', title: 'world_up_page.header'}) -->
+
+      <div class="live-match-block__content">
+        <div class="container p-0">
+          <!-- content -->
+          <div class="live-match-page__ads">
+            <iframe data-i18n="live_match_page.ads_src" data-i18n-attr="src" width="100%"></iframe>
+          </div>
+          <div class="live-match-page__top">
+            <div class="live-match-page__top__video">
+              <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- <div class="live-match-page__top__video__vs">
+                <div class="live-match-page__top__video__vs__name" data-i18n="live_match_page.AC_MILAN"></div>
+                <div class="px-5" data-i18n="live_match_page.vs"></div>
+                <div class="live-match-page__top__video__vs__name" data-i18n="live_match_page.AC_MILAN"></div>
+              </div> -->
+            </div>
+          </div>
+          <div class="live-match-page__content">
+            <div class="live-match-page__content__title">
+              <span data-i18n="live_match_page.LIVE_MATCH"></span>
+            </div>
+            <div class="live-match-page__content__tab">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="match-all-tab" data-bs-toggle="tab" data-bs-target="#match-all" type="button" role="tab" aria-controls="match-all" aria-selected="true" data-i18n="live_match_page.ALL"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-uefa-cl-tab" data-bs-toggle="tab" data-bs-target="#match-uefa-cl" type="button" role="tab" aria-controls="match-uefa-cl" aria-selected="false" data-i18n="live_match_page.UEFA_CL"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-epl-tab" data-bs-toggle="tab" data-bs-target="#match-epl" type="button" role="tab" aria-controls="match-epl" aria-selected="false" data-i18n="live_match_page.EPL"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-bundesliga-tab" data-bs-toggle="tab" data-bs-target="#match-bundesliga" type="button" role="tab" aria-controls="match-bundesliga" aria-selected="false" data-i18n="live_match_page.Bundesliga"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-la-liga-tab" data-bs-toggle="tab" data-bs-target="#match-la-liga" type="button" role="tab" aria-controls="match-la-liga" aria-selected="false" data-i18n="live_match_page.La_Liga"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-ligue-1-tab" data-bs-toggle="tab" data-bs-target="#match-ligue-1" type="button" role="tab" aria-controls="match-ligue-1" aria-selected="false" data-i18n="live_match_page.Ligue_1"></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="match-international-tab" data-bs-toggle="tab" data-bs-target="#match-international" type="button" role="tab" aria-controls="match-international" aria-selected="false" data-i18n="live_match_page.International"></button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="match-all" role="tabpanel" aria-labelledby="match-all-tab">
+                  @@include('../components/live-match/all.html')
+                </div>
+                <div class="tab-pane fade" id="match-uefa-cl" role="tabpanel" aria-labelledby="match-uefa-cl-tab">match-uefa-cl</div>
+                <div class="tab-pane fade" id="match-epl" role="tabpanel" aria-labelledby="match-epl-tab">match-epl</div>
+                <div class="tab-pane fade" id="match-bundesliga" role="tabpanel" aria-labelledby="match-bundesliga-tab">match-bundesliga</div>
+                <div class="tab-pane fade" id="match-la-liga" role="tabpanel" aria-labelledby="match-la-liga-tab">match-la-liga</div>
+                <div class="tab-pane fade" id="match-ligue-1" role="tabpanel" aria-labelledby="match-ligue-1-tab">match-ligue-1</div>
+                <div class="tab-pane fade" id="match-international" role="tabpanel" aria-labelledby="match-international-tab">match-international</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-block d-lg-none">
+        @@include('../components/base/navbar-bottom.html', {active: -1})
+      </div>
+      
+    </section>
+    <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../../components/base/header.html', {title: 'NEW USER GUIDE'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main help-page">
+
+      <!-- navbar -->
+      @@include('../../../components/base/navbar-child.html', {
+        title: 'help_page.Deposit',
+        back_url: '/help/user-guide/',
+        right_expand_icon: '../help/nav-right-icon.html',
+        right_expand_icon_url: '/help/',
+      })
+      <!-- navbar -->
+
+
+      <div class="help-page__content">
+        <div class="help-page__content__content">
+          <div class="help-page__content__content__items">
+            <div class="title" data-i18n="help_page.deposit_page.1"></div>
+            <div class="description" data-i18n="help_page.deposit_page.des1"></div>
+          </div>
+          <div class="help-page__content__content__items">
+            <div class="title" data-i18n="help_page.deposit_page.2"></div>
+            <div class="description" data-i18n="help_page.deposit_page.des2"></div>
+          </div>
+          <div class="help-page__content__content__items">
+            <div class="title" data-i18n="help_page.deposit_page.3"></div>
+            <div class="description" data-i18n="help_page.deposit_page.des3"></div>
+          </div>
+        </div>
+
+        <div class="help-page__content__footer" data-i18n="help_page.Need_assitance"></div>
+      </div>
+
+      
+      @@include('../../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../../../components/base/footer.html')
+  </body>
+</html>

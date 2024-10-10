@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Transaction History '})
+  <body>
+    
+    <!-- Content -->
+    <section class="main transaction-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/wallet', 
+        title: 'transaction_history_title', 
+        nav_expand_url: '../wallet/transaction/nav-expand.html',
+        nav_expand_active_btn: 1,
+        nav_expand_active_btn_text: 'Deposit'
+      })
+      <div class="transaction-history__content history-items container-fluid">
+
+        <div class="items">
+          <div class="items_img">
+            <img src="assets/images/wallet/home/items/1.png" />
+          </div>
+          <div class="items__content">
+            <h3 class="items__content__title">
+              MYR30.00 <span>(<span data-i18n="wallet_page.transaction-history.Deposit">Deposit</span>)</span>
+            </h3>
+            <div class="items__content__subtitle">
+              <span class="items__content__subtitle__time">2022-02-24 10:36:08</span>
+              <span class="items__content__subtitle__status rejected" data-i18n="Rejected">Rejected</span>
+            </div>
+            <div class="items__content__description" data-i18n="Fund_not_received"></div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="items_img">
+            <img src="assets/images/wallet/home/items/1.png" />
+          </div>
+          <div class="items__content">
+            <h3 class="items__content__title">
+              MYR100.00 <span>(<span data-i18n="wallet_page.transaction-history.Deposit">Deposit</span>)</span>
+            </h3>
+            <div class="items__content__subtitle">
+              <span class="items__content__subtitle__time">2022-02-22 16:49:21</span>
+              <span class="items__content__subtitle__status" data-i18n="Approve">Approve</span>
+            </div>
+            <div class="items__content__description" data-i18n="Deposited_from_Maybank"></div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

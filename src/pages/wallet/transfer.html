@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Tranfer'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main transfer">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'TRANSFER', help_url: '/'})
+      <div class="transfer__content container-fluid">
+
+        <div class="transfer__content__wallet">
+          <div class="transfer__content__wallet__title">
+            <div><span data-i18n="Wallet_Balance"></span> <img src="assets/images/wallet/refresh.png" /></div>
+            <a href="#"><img src="assets/images/wallet/restore.png" /> Restore</a>
+          </div>
+          
+          <div class="transfer__content__wallet__main">
+            <div>
+              <div><img src="assets/images/wallet/wallet-gray.png" /> <span data-i18n="Main_Wallet">Main Wallet</span></div>
+              <p>0.00</p>
+            </div>
+            <div>
+              <div><img src="assets/images/wallet/wallet-gray.png" /> <span data-i18n="Game_Wallet">Game Wallet</span></div>
+              <p>0.00</p>
+            </div>
+          </div>
+
+          <div class="transfer__content__wallet__content">
+            <div class="row">
+              <div class="col-3 item">
+                <div>IGKBET SPORTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>CMD368 SPORTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>EVO CLUB</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>PP CLUB</div>
+                <span>0:00</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 item">
+                <div>PP CLUB</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>SEXY CLUB</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>DG CLUB</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>PP SLOTS</div>
+                <span>0:00</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 item">
+                <div>QTECH SLOTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>CQ SLOTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>TOKYO KOMBAT</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>FISHING GOD</div>
+                <span>0:00</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 item">
+                <div>VIRTUAL SPORTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>ESPORTS</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>TF GAMING</div>
+                <span>0:00</span>
+              </div>
+              <div class="col-3 item">
+                <div>4D LOTTERY</div>
+                <span>0:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer__content__wallet__expand">
+            <div data-i18n="Hide">Hide</div>
+            <img src="assets/images/wallet/hide.png" />
+          </div>
+        </div>
+
+
+        <div class="transfer__content__auto-switch">
+          <span data-i18n="wallet_page.transfer.Auto_Transfer">Auto Transfer</span>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Enable this button for auto transfer balance</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="autoTransferCheck" checked="checked">
+          </div>
+        </div>
+
+        <div class="transfer__content__auto-switch-off d-none">
+          <div class="transfer__content__auto-switch-off__main">
+            <div data-bs-toggle="modal" data-bs-target="#chooseWalletModal">
+              <span id="auto-switch-off--left">MAIN WALLET</span>
+              <img src="assets/images/wallet/right.png" class="ms-1" />
+            </div>
+            <div><img src="assets/images/wallet/right-1.png" /></div>
+            <div>
+              <span id="auto-switch-off--right">VIRTUAL SPORTS</span>
+              <img src="assets/images/wallet/right.png" class="ms-1" />
+            </div>
+          </div>
+          <div class="transfer__content__auto-switch-off__transfer" data-i18n="wallet_page.transfer.No_transfer_between_game_wallets">
+            No transfer between game wallets
+          </div>
+          <div class="transfer__content__auto-switch-off__input input-group">
+            <span class="input-group-text left">MYR</span>
+            <input type="text" class="form-control" placeholder="Please enter transfer amount" />
+            <span class="input-group-text right"><img src="assets/images/wallet/all.png" /> All</span>
+          </div>
+        </div>
+
+        <div class="transfer__content__action d-none">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferSuccessModal" data-i18n="wallet_page.transfer.TRANSFER_NOW">TRANSFER NOW</button>
+        </div>
+
+
+
+
+        <!-- MODAL -->
+        @@include('../../components/wallet/transfer-confirm-modal.html')
+        @@include('../../components/wallet/choose-wallet-modal.html')
+        @@include('../../components/wallet/transfer-success-modal.html')
+        
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

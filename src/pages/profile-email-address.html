@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'EMAIL ADDRESS'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main profile ">
+      @@include('../components/base/navbar-child.html', {back_url: '/my-account.html', title: 'EMAIL ADDRESS'})
+      <div class="profile__content container-fluid">
+
+        <form>
+          <div class="items">
+            <label for="exampleFormControlInput1" class="form-label" data-i18n="profile.Email_Address">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlEmailAddressInput" data-i18n-attr="placeholder" data-i18n="profile.Email_address_Placeholder1" placeholder="Please enter your email address">
+          </div>
+          <div class="items">
+            <label for="exampleFormControlInput2" class="form-label" data-i18n="profile.Verify_Email_Address">Verify Email Address</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="exampleFormControlInput2" data-i18n-attr="placeholder" data-i18n="profile.Verify_Email_address_Placeholder" placeholder="Please enter verification code">
+              <span class="input-group-text" id="basic-addon2">
+                <button class="btn btn-primary btn-request_code" data-i18n="profile.Request_Code" disabled>Request Code</button>
+              </span>
+            </div>
+          </div>
+        </form>
+
+        <p class="description" data-i18n="profile.description1">For your safety purposes, some informations cannot be edited. </p>
+        <p class="description" data-i18n="profile.description2">Need assistance? Please contact <a href="#">Customer Service</a></p>
+
+        <!-- MODAL -->
+        @@include('../components/select-profile-picture-modal.html')
+
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

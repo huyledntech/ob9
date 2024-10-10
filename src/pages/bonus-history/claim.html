@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'BONUS_CENTER'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main bonus-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Bonus_History', 
+        nav_expand_url: '../bonus-history/nav-expand.html',
+        nav_expand_active_btn: 2,
+        nav_expand_active_btn_text: 'bonus_history_page.Claim'
+      })
+      <div class="bonus-history__content bonus-history container-fluid">
+
+        <div class="bonus-history__content__img">
+          <img src="assets/images/bonus-history-bg.png" />
+        </div>
+        <div class="bonus-history__content__description" data-i18n="bonus_history_page.No_record_found"></div>
+
+        <!-- MODAL -->
+        <!-- @@include('../../components/select-bank-modal.html') -->
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

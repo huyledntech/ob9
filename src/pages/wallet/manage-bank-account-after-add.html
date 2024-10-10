@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Manage Bank Account'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main withdrawal manage-bank-account">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Manage_Bank_Account'})
+      <div class="withdrawal__content container-fluid">
+
+        <div class="withdrawal__content__bank-account">
+          <div class="withdrawal__content__bank-account__title">
+            <span data-i18n="Bank_Account">Bank Account</span>
+            <a href="/wallet/manage-bank-account-after-add-managin-account.html">
+              <img src="assets/images/wallet/setting.png" width="20px"/> <span data-i18n="Manage"></span>
+            </a>
+          </div>
+          <div class="withdrawal__content__bank-account__items">
+            <label class="withdrawal__content__bank-account__items__label">
+              <div class="withdrawal__content__bank-account__items__label__content">
+                <div class="withdrawal__content__bank-account__items__label__content__img">
+                  <img src="assets/images/wallet/bank/maybank.png" />
+                </div>
+                <div class="withdrawal__content__bank-account__items__label__content__title">MAYBANK ****4058</div>
+              </div>
+              <input class="withdrawal__content__bank-account__items__label__checkbox" type="radio" name="bank-account" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+
+            <label class="withdrawal__content__bank-account__items__label">
+              <div class="withdrawal__content__bank-account__items__label__content">
+                <div class="withdrawal__content__bank-account__items__label__content__img">
+                  <img src="assets/images/wallet/bank/CIMB-bank.png" />
+                </div>
+                <div class="withdrawal__content__bank-account__items__label__content__title">CIMB BANK ****7202</div>
+              </div>
+              <input class="withdrawal__content__bank-account__items__label__checkbox" type="radio" name="bank-account" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+          </div>
+          <a href="/wallet/manage-add-bank-account.html" class="withdrawal__content__bank-account__add-bank">
+            <img src="assets/images/wallet/plus.png" /> <span data-i18n="Add_bank_account"></span>
+          </a>
+        </div>
+        
+        <!-- MODAL -->
+        @@include('../../components/wallet/withdrawal-success-modal.html')
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

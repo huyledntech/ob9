@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'ABOUT US'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main about-us">
+
+      <!-- navbar -->
+      @@include('../components/base/navbar-child.html', {
+        title: 'ABOUT_US',
+        back_url: '/',
+        right_expand_icon: '../help/nav-right-icon.html',
+        right_expand_icon_url: '/help/',
+      })
+      <!-- navbar -->
+
+
+      <div class="about-us__content">
+        <div class="about-us__content__logo">
+          <img src="assets/images/about-us/logo.png" />
+          <div class="about-us__content__logo__name">OB ENTERTAINMENT</div>
+        </div>
+        <div class="about-us__content__legal">
+          <span data-i18n="about_us_page.Legal_Licenses"></span>
+        </div>
+        <div class="about-us__content__legal-content">
+          <div class="about-us__content__legal-content__item">
+            <div class="about-us__content__legal-content__item__img img-1"></div>
+            <div data-i18n="about_us_page.Legal_Licenses1"></div>
+          </div>
+          <div class="about-us__content__legal-content__item">
+            <div class="about-us__content__legal-content__item__img img-2"></div>
+            <div data-i18n="about_us_page.Legal_Licenses2"></div>
+          </div>
+          <div class="about-us__content__legal-content__item">
+            <div class="about-us__content__legal-content__item__img img-3"></div>
+            <div data-i18n="about_us_page.Legal_Licenses3"></div>
+          </div>
+        </div>
+        <div class="about-us__content__bottom" data-i18n="about_us_page.description"></div>
+      </div>
+
+      
+      @@include('../components/base/navbar-bottom.html')
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Campaign Bonanza'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main campaign-bonanza">
+      @@include('../../components/base/navbar-child.html', {
+        title: 'CAMPAIGN_BONANZA_title',
+        back_url: '/my-account.html'
+      })
+      <div class="campaign-bonanza__content container-fluid">
+
+        <div class="campaign-bonanza__content__items">
+          <div class="campaign-bonanza__content__items__img">
+            <img src="assets/images/campaign-bonanza/1.png" />
+            <div class="campaign-bonanza__content__items__img__content">
+              <div class="campaign-bonanza__content__items__img__content__title" data-i18n="campaign_bonanza_page.First_Deposit_Bonus"></div>
+              <div class="campaign-bonanza__content__items__img__content__subtitle" data-i18n="campaign_bonanza_page.First_Deposit_Bonus_sub"></div>
+            </div>
+          </div>
+          <div class="campaign-bonanza__content__items__content">
+            <div class="campaign-bonanza__content__items__content__title" data-i18n="campaign_bonanza_page.First_Deposit_Bonus1"></div>
+            <a href="/campaign-bonanza/first-deposit-bonus.html" class="btn btn-sm btn-primary campaign-bonanza__content__items__content__learn-more" data-i18n="campaign_bonanza_page.LEARN_MORE"></a>
+          </div>
+        </div>
+
+        <div class="campaign-bonanza__content__items">
+          <div class="campaign-bonanza__content__items__img">
+            <img src="assets/images/campaign-bonanza/2.png" />
+            <div class="campaign-bonanza__content__items__img__content">
+              <div class="campaign-bonanza__content__items__img__content__title" data-i18n="campaign_bonanza_page.Monthly_Turnover_Bonus"></div>
+              <div class="campaign-bonanza__content__items__img__content__subtitle" data-i18n="campaign_bonanza_page.Monthly_Turnover_Bonus_sub"></div>
+            </div>
+          </div>
+          <div class="campaign-bonanza__content__items__content">
+            <div class="campaign-bonanza__content__items__content__title" data-i18n="campaign_bonanza_page.Monthly_Turnover_Bonus1"></div>
+            <a href="/campaign-bonanza/monthly-turnover-bonus.html" class="btn btn-sm btn-primary campaign-bonanza__content__items__content__learn-more" data-i18n="campaign_bonanza_page.LEARN_MORE"></a>
+          </div>
+        </div>
+
+        
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

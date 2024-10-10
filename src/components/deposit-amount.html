@@ -1,0 +1,76 @@
+<div class="row deposit-amount">
+
+  <div class="col-12">
+    <!-- INPUT   -->
+    <div class="input-group deposit-amount__input-group">
+      <span class="input-group-text">MYR</span>
+      <input type="number" id="deposit-amount-input" class="form-control deposit-amount-input" data-i18n="Per_Deposit_Amount" data-i18n-attr="placeholder" placeholder="">
+    </div>
+    <div id="deposit-amount-input-label" class="mb-3 text-danger deposit-amount-input-label" style="font-size: 11px; margin-left: 50px;" data-i18n="Min_Max_Limit"></div>
+    <!-- END INPUT  -->
+  </div>
+
+
+  <!-- SELECT -->
+  <div class="col-3 deposit-amount__item">
+    <label class="deposit-amount__item__label">
+      <div class="deposit-amount__item__label__title">200</div>
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="200" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+  
+  <div class="col-3 deposit-amount__item">
+    <label class="deposit-amount__item__label">
+      <div class="deposit-amount__item__label__title">500</div>
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="500" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <div class="col-3 deposit-amount__item">
+    <label class="deposit-amount__item__label">
+      <div class="deposit-amount__item__label__title">1000</div>
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="1000" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <div class="col-3 deposit-amount__item">
+    <label class="deposit-amount__item__label">
+      <div class="deposit-amount__item__label__title">5000</div>
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="5000" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <div class="col-3 deposit-amount__item">
+    <label class="deposit-amount__item__label">
+      <div class="deposit-amount__item__label__title">10000</div>
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="10000" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+  <!-- END SELECT -->
+
+  <div class="deposit-amount__action d-grid gap-2">
+    
+    @@if (!context.hide_attach_button) {
+      <div class="text-start" data-i18n="Attach_Receipt_note"></div>
+      <label class="btn btn btn-outline-secondary btn-choose" role="button">
+        <img src="assets/images/new-icons/choose-file.png" />
+        <span data-i18n="Attach_Receipt">Attach Receipt</span> 
+        <input type="file" hidden>
+      </label>
+    }
+
+    @@if (!!context.select_promotion) {
+      @@include('@@select_promotion')
+    }
+    
+    <button class="btn btn-primary mb-2 btn-submit" type="button" data-i18n="submit" @@if (!!context.disabled_submit) {disabled="disabled"}>SUBMIT</button>
+    <!-- <div><span data-i18n="wallet_page.Having_problem_to_deposit">Having problem to deposit?</span> <span data-i18n="wallet_page.Our">Our</span> <a href="#" data="wallet_page.Customer_Service">Customer Service</a> <span data-i18n="wallet_page.representative_can_assist_you">representative can assist you.</span></div> -->
+    <div data-i18n="wallet_page.Having_problem_text">Having problem to deposit? Our <a href="#">Customer Service</a> representative can assist you.</div>
+  </div>
+
+</div>

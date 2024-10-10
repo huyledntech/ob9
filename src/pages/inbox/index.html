@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Inbox'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main inbox ">
+      @@include('../../components/inbox/navbar-child.html', {
+        back_url: '/', 
+        title: 'inbox', 
+      })
+      <a href="/inbox/detail.html" class="inbox__items">
+        <input type="checkbox" class="inbox_checkbox d-none" name="inbox_select" />
+        <div class="inbox__items__img"><img src="assets/images/inbox/1.png" /></div>
+        <div class="inbox__items__content">
+          <div class="inbox__items__content__title" data-i18n="inbox_page.title1"></div>
+          <div class="inbox__items__content__description" data-i18n="inbox_page.subtitle1"></div>
+        </div>
+        <div class="inbox__items__right">
+          <div class="inbox__items__right__date">2022-03-14</div>
+          <span class="badge"></span>
+        </div>
+      </a>
+      <a href="/inbox/detail.html" class="inbox__items">
+        <input type="checkbox" class="inbox_checkbox d-none" name="inbox_select" />
+        <div class="inbox__items__img"><img src="assets/images/inbox/2.png" /></div>
+        <div class="inbox__items__content">
+          <div class="inbox__items__content__title" data-i18n="inbox_page.title1"></div>
+          <div class="inbox__items__content__description" data-i18n="inbox_page.subtitle1"></div>
+        </div>
+        <div class="inbox__items__right">
+          <div class="inbox__items__right__date">2022-03-14</div>
+          <span class="badge"></span>
+        </div>
+      </a>
+      <a href="/inbox/detail.html" class="inbox__items">
+        <input type="checkbox" class="inbox_checkbox d-none" name="inbox_select" />
+        <div class="inbox__items__img"><img src="assets/images/inbox/1.png" /></div>
+        <div class="inbox__items__content">
+          <div class="inbox__items__content__title" data-i18n="inbox_page.title1"></div>
+          <div class="inbox__items__content__description" data-i18n="inbox_page.subtitle1"></div>
+        </div>
+        <div class="inbox__items__right">
+          <div class="inbox__items__right__date">2022-03-14</div>
+          <!-- <span class="badge"></span> -->
+        </div>
+      </a>
+      <a href="/inbox/detail.html" class="inbox__items">
+        <input type="checkbox" class="inbox_checkbox d-none" name="inbox_select" />
+        <div class="inbox__items__img"><img src="assets/images/inbox/2.png" /></div>
+        <div class="inbox__items__content">
+          <div class="inbox__items__content__title" data-i18n="inbox_page.title1"></div>
+          <div class="inbox__items__content__description" data-i18n="inbox_page.subtitle1"></div>
+        </div>
+        <div class="inbox__items__right">
+          <div class="inbox__items__right__date">2022-03-14</div>
+          <!-- <span class="badge"></span> -->
+        </div>
+      </a>
+
+      <div class="inbox__empty d-none" data-i18n="inbox_page.Your_inbox_is_empty"></div>
+
+
+      <div class="inbox__action d-none">
+        <button class="btn btn-primary inbox__action__mark_all_read" disabled data-i18n="inbox_page.mark_all_read"></button>
+        <button class="btn btn-danger inbox__action__delete" disabled data-i18n="inbox_page.delete"></button>
+      </div>
+
+      <!-- MODAL -->
+      <!-- MODAL -->
+
+
+      @@include('../../components/base/navbar-bottom.html', {active: -1})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

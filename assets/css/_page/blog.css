@@ -1,0 +1,192 @@
+.blog-page {
+  padding-top: 50px;
+}
+.blog-page .row {
+  margin: 0;
+}
+.blog-page h1 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.blog-page a {
+  color: #181818;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: 400;
+}
+.blog-page .blog-container {
+  padding: 30px 0;
+}
+.blog-page .breadcrumbs-wrapper {
+  background-color: #f8f8f8;
+}
+.blog-page #breadcrumbs {
+  padding: 15px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.blog-page #breadcrumbs span.separator {
+  padding: 0 4px;
+  opacity: 0.5;
+}
+.blog-page #breadcrumbs span.separator .breadcrumb-sep:after {
+  content: ">";
+  display: inline-block;
+  opacity: 0.5;
+  font-size: 10px;
+}
+.blog-page #breadcrumbs .item-current {
+  opacity: 0.5;
+}
+.blog-page .news-item {
+  margin-bottom: 30px;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+}
+.blog-page .news-item .thumb-wrapper img {
+  width: 100%;
+  vertical-align: middle;
+}
+.blog-page .news-item .new-text-group {
+  background-color: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  flex-grow: 1;
+}
+.blog-page .news-item .new-text-group .news-info {
+  margin-bottom: 15px;
+  color: #a8a8a6;
+  font-weight: 700;
+  font-size: 0.8571428571rem;
+}
+.blog-page .news-item .new-text-group .news-info span {
+  font-weight: 400;
+}
+.blog-page .news-item .new-text-group .news-info .pull-right {
+  float: right;
+}
+.blog-page .news-item .new-text-group h2 {
+  font-weight: 700;
+  font-size: 1.5714285714rem;
+  line-height: 1.25em;
+  margin-bottom: 15px;
+}
+.blog-page .news-item .new-text-group p {
+  font-size: 1rem;
+  line-height: 1.8em;
+  margin-bottom: 15px;
+}
+.blog-page .news-item .new-text-group .read-more {
+  color: #d02d21;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.blog-page .pagination {
+  display: block;
+  margin: 30px auto 0;
+  color: #fff;
+  text-align: center;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.blog-page .pagination span,
+.blog-page .pagination a {
+  display: inline-block;
+  min-width: 44px;
+  padding: 0 12px;
+  line-height: 44px;
+  background-color: #312f2f;
+  border-radius: 5px;
+  margin: 0 4px;
+  opacity: 0.4;
+  color: #fff;
+}
+.blog-page .pagination a {
+  opacity: 1;
+  transition: 0.4s;
+}
+.blog-page .pagination a:hover {
+  text-decoration: none;
+  opacity: 0.4;
+}
+.blog-page .sidebar {
+  background-color: #eeedeb;
+  padding: 30px 35px 30px;
+}
+.blog-page .sidebar .widget {
+  margin-bottom: 35px;
+}
+.blog-page .sidebar .widget h3 {
+  font-size: 1.4285714286rem;
+  font-weight: 500;
+  border-bottom: 1px solid #a8a8a6;
+  padding-bottom: 10px;
+}
+.blog-page .sidebar .widget ul {
+  padding-left: 15px;
+  margin-top: 15px;
+}
+.blog-page .sidebar .widget ul li {
+  list-style-position: outside;
+  margin-bottom: 15px;
+}
+.blog-page .sidebar .widget ul li::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+.blog-page .sidebar .widget ul li a:hover {
+  text-decoration: underline;
+}
+.blog-page .single-post-wrapper .post-info {
+  background-color: #eeedeb;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 0.8571428571rem;
+}
+.blog-page .single-post-wrapper .post-info .post-info__left {
+  float: left;
+}
+@media (max-width: 575px) {
+  .blog-page .single-post-wrapper .post-info .post-info__left {
+    float: none;
+    text-align: center;
+  }
+}
+.blog-page .single-post-wrapper .post-info .post-info__right {
+  float: right;
+}
+@media (max-width: 575px) {
+  .blog-page .single-post-wrapper .post-info .post-info__right {
+    float: none;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 7px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+.blog-page .single-post-wrapper .post-info a {
+  color: #fcb813;
+}
+.blog-page .single-post-wrapper .post-info .seperator {
+  padding: 0 8px;
+  opacity: 0.5;
+  display: inline-block;
+}
+.blog-page .single-post-wrapper .blog-detail-content img {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.blog-page .single-post-wrapper .blog-detail-content p {
+  margin-bottom: 20px;
+  line-height: 20px;
+}

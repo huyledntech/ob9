@@ -1,0 +1,462 @@
+.my-account {
+  padding: 0;
+  background-color: #E8F5FF;
+  font-size: 14px;
+
+  .benefits {
+    background-image: url(../images/new-icons/profile/benefits-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .benefits-title {
+      font-size: 16px;
+      color: #122b55;
+      font-weight: 600;
+    }
+
+    .claim-button {
+      color: white;
+      border: none;
+      background-color: transparent;
+      font-size: 12px;
+    }
+  }
+
+  &__content {
+    &__topcontent {
+      // background-image: url(../images/my-account/my-account-bg-1.png);
+      // background-repeat: no-repeat;
+      // background-size: 100%;
+      // background-position: top;
+      // min-height: 400px;
+
+      &__nav {
+        display: flex;
+        place-content: flex-end;
+        place-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding: 0;
+        gap: 8px;
+        align-self: flex-start;
+
+        img {
+          max-width: 33px;
+        }
+      }
+
+      &__top {
+        display: flex;
+        place-content: flex-start;
+        place-items: center;
+        padding-top: 15px;
+        gap: 10px;
+
+        &__avatar {
+          max-width: 60px;
+          border: 3px solid #FFFFFF;
+          border-radius: 50%;
+        }
+
+        &__user-info {
+          display: flex;
+          place-content: space-between;
+          width: 100%;
+          place-items: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          color: #333;
+
+          h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 14px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+
+      &__balance {
+        background-image: url(../images/my-account/wallet-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 12px 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #E7D3A5;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+
+        h4 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 14px;
+          margin: 0;
+        }
+      }
+
+      &__wallet {
+        margin: 0;
+        padding: 10px;
+        background: #FFFFFF;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        @media only screen and (max-width: 390px) {
+          margin: 0 15px !important;
+        }
+
+
+        &__top {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+
+          a {
+            color: #000000;
+
+            img {
+              max-width: 70px;
+            }
+
+            &>span {
+              &>span {
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 14px;
+                color: #94A6B7;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 390px) {
+            a {
+              img {
+                max-width: 60px;
+              }
+
+              &>span {
+                &>span {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+
+          @media only screen and (max-width: 370px) {
+            a {
+              img {
+                max-width: 55px;
+              }
+            }
+          }
+        }
+
+        &__bottom {
+          display: flex;
+          place-content: space-around;
+          place-items: flex-start;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          color: #000000;
+          padding: 15px 0;
+
+          &>a {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+            color: #000000;
+
+            img {
+              max-width: 40px;
+            }
+
+            &>div {
+              // max-width: 70%;
+              margin-bottom: 0;
+              margin-top: 5px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    &__promotion {
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin: 0 15px;
+    }
+
+    &__navbar {
+      list-style: none;
+      padding: 0 15px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin: 0 15px;
+
+      li {
+        a {
+          display: flex;
+          place-items: center;
+          place-content: space-between;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+          border-bottom: 1px solid #f1f1f1;
+          // padding-bottom: 5px;
+          // padding-top: 30px;
+          padding-bottom: 15px;
+          padding-top: 15px;
+
+          &>div {
+            display: flex;
+            place-items: center;
+            place-content: space-between;
+            gap: 10px;
+
+            .icon {
+              max-width: 20px;
+              text-align: center;
+            }
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: right;
+            color: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 425px) {
+//   .my-account {
+//     padding: 0;
+
+//     &__content {
+//       &__topcontent {
+//         // background-image: url(../images/my-account/my-account-bg.png);
+//         // background-repeat: no-repeat;
+//         // background-size: 100%;
+//         // background-position: top;
+//         // min-height: 390px;
+
+//         &__nav {
+//           display: flex;
+//           place-content: flex-end;
+//           place-items: center;
+//           font-style: normal;
+//           font-weight: 400;
+//           font-size: 13px;
+//           line-height: 14px;
+//           color: #FFFFFF;
+//           padding: 20px;
+//           padding-top: 15px;
+//           padding-bottom: 0;
+//           gap: 8px;
+
+//           img {
+//             max-width: 33px;
+//           }
+//         }
+
+//         &__top {
+//           display: flex;
+//           place-content: flex-start;
+//           place-items: center;
+//           padding: 20px;
+//           padding-top: 0;
+//           padding-left: 40px;
+//           gap: 15px;
+
+//           &__avatar {
+//             max-width: 65px;
+//           }
+
+//           &__user-info {
+//             display: flex;
+//             place-content: space-between;
+//             width: 100%;
+//             place-items: center;
+//             font-style: normal;
+//             font-weight: 300;
+//             font-size: 12px;
+//             line-height: 14px;
+//             color: rgba(255, 255, 255, 0.5);
+
+//             h4 {
+//               font-style: normal;
+//               font-weight: 400;
+//               font-size: 20px;
+//               line-height: 14px;
+//               color: #FFFFFF;
+//               margin-bottom: 10px;
+//             }
+//           }
+//         }
+
+//         &__balance {
+//           background-image: url(../images/my-account/wallet-bg.png);
+//           background-repeat: no-repeat;
+//           background-size: cover;
+//           margin: 0 40px;
+//           padding: 12px 15px;
+//           font-style: normal;
+//           font-weight: 400;
+//           font-size: 12px;
+//           line-height: 14px;
+//           color: #E7D3A5;
+//           display: flex;
+//           place-content: space-between;
+//           place-items: center;
+//           border-top-left-radius: 10px;
+//           border-top-right-radius: 10px;
+//           overflow: hidden;
+
+//           h4 {
+//             font-style: normal;
+//             font-weight: 700;
+//             font-size: 18px;
+//             line-height: 14px;
+//             margin: 0;
+//           }
+//         }
+
+//         &__wallet {
+//           margin: 0 20px;
+//           padding: 10px;
+//           background: #FFFFFF;
+//           border-radius: 10px;
+
+
+//           &__top {
+//             display: flex;
+//             place-content: space-between;
+//             place-items: center;
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 15px;
+//             line-height: 20px;
+//             color: #000000;
+//             padding-right: 10px;
+
+//             img {
+//               max-width: 60px;
+//             }
+//           }
+
+//           &__bottom {
+//             display: flex;
+//             place-content: space-between;
+//             place-items: center;
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 12px;
+//             line-height: 15px;
+//             text-align: center;
+//             color: #000000;
+//             padding: 20px 0 15px 15px;
+
+//             &>a {
+//               display: flex;
+//               flex-direction: column;
+//               place-content: center;
+//               place-items: center;
+
+//               img {
+//                 max-width: 35px;
+//               }
+
+//               &>div {
+//                 // max-width: 70%;
+//                 margin-bottom: 0;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       &__navbar {
+//         list-style: none;
+//         border-top: 7px solid #f2f2f2;
+//         padding: 0px 20px 20px;
+
+//         li {
+//           a {
+//             display: flex;
+//             place-items: center;
+//             place-content: space-between;
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 14px;
+//             line-height: 14px;
+//             color: #000000;
+//             border-bottom: 1px solid #f1f1f1;
+//             padding-bottom: 5px;
+//             padding-top: 30px;
+
+//             &>div {
+//               display: flex;
+//               place-items: center;
+//               place-content: space-between;
+//               gap: 8px;
+
+//               .icon {
+//                 min-width: 30px;
+//                 max-width: 30px;
+//                 max-width: 30px;
+//                 text-align: center;
+//               }
+//             }
+
+//             span {
+//               font-weight: 400;
+//               font-size: 10px;
+//               line-height: 14px;
+//               text-align: right;
+//               color: rgba(0, 0, 0, 0.2);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

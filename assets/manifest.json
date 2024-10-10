@@ -1,0 +1,48 @@
+{
+  "name": "Discover OB9 Online Casino",
+  "short_name": "OB9 Online",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f0f6ff",
+  "theme_color": "#4080FF",
+  "orientation": "portrait-primary",
+  "description": "Discover OB9 Online Casino | Slots Welcome Bonus In Singapore | OB9 Casino",
+  "icons": [
+    {
+      "src": "/assets/images/logo-icon/logo-57x57.png",
+      "type": "image/png", "sizes": "57x57"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-72x72.png",
+      "type": "image/png", "sizes": "72x72"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-114x114.png",
+      "type": "image/png", "sizes": "114x114"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-120x120.png",
+      "type": "image/png","sizes": "120x120"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-144x144.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-152x152.png",
+      "type": "image/png", "sizes": "152x152"
+    },
+    {
+      "src": "/assets/images/logo-icon/logo-180x180.png",
+      "type": "image/png", "sizes": "180x180"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshots/screenshot.png",
+      "sizes": "390x846",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

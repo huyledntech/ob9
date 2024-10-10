@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Withdrawal'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main withdrawal">
+      <!-- @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Withdrawal'}) -->
+
+      <div class="withdrawal__content container-fluid">
+
+        <div class="has-section">
+
+          <div class="d-flex align-items-center section-content p-2 head">
+            <a id="back_url" class="" href="'/wallet" style="flex: none;">
+              <img src="assets/icons/icon_back.png" alt="" width="30" />
+            </a>
+            <ul class="w-100 nav nav-tabs nav-fill deposit__content__tab mx-2" id="depositTab" role="tablist">
+              <li class="nav-item deposit__content__tab__item" role="presentation">
+                <button class="nav-link deposit__content__tab__item__link mid active" id="withdrawl-bank-account-tab" data-bs-toggle="tab" data-bs-target="#withdrawl-bank-account" type="button" role="tab" aria-controls="withdrawl-bank-account" aria-selected="true">
+                  <span data-i18n="Bank_Account"></span>
+                </button>
+              </li>
+              <li class="nav-item deposit__content__tab__item" role="presentation">
+                <button class="nav-link deposit__content__tab__item__link" id="crypto-currency-tab" data-bs-toggle="tab" data-bs-target="#crypto-currency" type="button" role="tab" aria-controls="crypto-currency" aria-selected="false">
+                  <span data-i18n="wallet_page.Crypto">Crypto</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content deposit__content__tab_content pt-0 px-3" id="depositTabContent">
+            <div class="tab-pane fade show active" id="withdrawl-bank-account" role="tabpanel" aria-labelledby="withdrawl-bank-account-tab">
+              @@include('../../components/wallet/withdrawl/wallet.html')
+              @@include('../../components/wallet/withdrawl/bank-account-content.html')
+            </div>
+            <div class="tab-pane fade" id="crypto-currency" role="tabpanel" aria-labelledby="crypto-currency-tab">
+              @@include('../../components/wallet/withdrawl/wallet.html')
+              @@include('../../components/wallet/withdrawl/crypto-content.html')
+            </div>
+          </div>
+
+        </div>
+
+        
+
+        
+
+        <div class="withdrawal__content__description pt-0" data-i18n="wallet_page.withdrawal.description">
+          Please transfer all balances to the main wallet before withdrawal request. 
+        </div>
+
+        <div class="withdrawal__content__help" data-i18n="wallet_page.withdrawal.help">
+          Need assistance? Please contact <a href="#">Customer Service</a>
+        </div>
+        
+        <!-- MODAL -->
+        @@include('../../components/wallet/withdrawal-success-modal.html')
+        @@include('../../components/modal/delete-bank-modal.html')
+        @@include('../../components/modal/delete-crypto-wallet-address-modal.html')
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

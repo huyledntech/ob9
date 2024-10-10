@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Withdrawal Verification List'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main withdrawal">
+      @@include('../components/base/navbar-child.html', {back_url: '/wallet', title: 'Withdrawal'})
+      <div class="withdrawal__content container-fluid">
+
+        <div class="withdrawal__content__wallet">
+          <h3><span data-i18n="Wallet_Balance"></span><img src="assets/images/wallet/refresh.png" width="20px"/></h3>
+          <div>
+            <div><img src="assets/images/wallet/wallet-gray.png"  width="16px"/> <span data-i18n="Main_Wallet">Main Wallet</span></div>
+            <p><span data-i18n="CURRENCY_KEY"></span> 5800.00</p>
+          </div>
+        </div>
+        
+
+        <div class="withdrawal__content__bank-account">
+          <div class="withdrawal__content__bank-account__title" data-i18n="Bank_Account">Bank Account</div>
+          <div class="withdrawal__content__bank-account__items">
+            <label class="withdrawal__content__bank-account__items__label">
+              <div class="withdrawal__content__bank-account__items__label__content">
+                <div class="withdrawal__content__bank-account__items__label__content__img">
+                  <img src="assets/images/wallet/bank/maybank.png" />
+                </div>
+                <div class="withdrawal__content__bank-account__items__label__content__title">MAYBANK ****4058</div>
+              </div>
+              <input class="withdrawal__content__bank-account__items__label__checkbox" type="radio" name="bank-account" checked="checked" />
+              <div class="withdrawal__content__bank-account__items__label__status verifying" data-i18n="Verifying"></div>
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="withdrawal__content__bank-account__items__label">
+              <div class="withdrawal__content__bank-account__items__label__content">
+                <div class="withdrawal__content__bank-account__items__label__content__img">
+                  <img src="assets/images/wallet/bank/CIMB-bank.png" />
+                </div>
+                <div class="withdrawal__content__bank-account__items__label__content__title">CIMB BANK ****7202</div>
+              </div>
+              <div class="withdrawal__content__bank-account__items__label__status verified" data-i18n="Verified"></div>
+              <input class="withdrawal__content__bank-account__items__label__checkbox" type="radio" name="bank-account" />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="withdrawal__content__bank-account__items__label">
+              <div class="withdrawal__content__bank-account__items__label__content">
+                <div class="withdrawal__content__bank-account__items__label__content__img">
+                  <img src="assets/images/wallet/bank/RHB-bank.png" />
+                </div>
+                <div class="withdrawal__content__bank-account__items__label__content__title">RHB Bank ****5677</div>
+              </div>
+              <a href="/add-bank-statement-for-verification.html" class="btn btn-sm btn-danger pt-2 pb-2 z-index-500 withdrawal__content__bank-account__items__label__status" data-i18n="Verify">Verify</a>
+              <input class="withdrawal__content__bank-account__items__label__checkbox" type="radio" name="bank-account" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <a href="/wallet/add-bank-account.html" class="withdrawal__content__bank-account__add-bank">
+            <img src="assets/images/wallet/plus.png" /> <span data-i18n="wallet_page.withdrawal.Add_Bank_Account">Add Bank Account</span>
+          </a>
+        </div>
+
+        <div class="withdrawal__content__description" data-i18n="wallet_page.withdrawal.description1"></div>
+        
+        <div class="withdrawal__content__input">
+          <div class="input-group">
+            <span class="input-group-text left">MYR</span>
+            <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+            <span class="input-group-text right withdrawal-max-value"><img src="assets/images/wallet/max.png" style="width: 16px" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+          </div>
+          <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+        </div>
+
+
+        <div class="withdrawal__content__submit">
+          <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT">SUBMIT</button>
+        </div>
+
+        <div class="withdrawal__content__description pt-0" data-i18n="wallet_page.withdrawal.description">
+          Please transfer all balances to the main wallet before withdrawal request. 
+        </div>
+
+        <div class="withdrawal__content__help" data-i18n="wallet_page.withdrawal.help">
+          Need assistance? Please contact <a href="#">Customer Service</a>
+        </div>
+        
+        <!-- MODAL -->
+        @@include('../components/wallet/withdrawal-success-modal.html')
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

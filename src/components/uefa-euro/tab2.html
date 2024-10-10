@@ -1,0 +1,67 @@
+<div class="block-container">
+  <div class="block-content blue-border">
+    <div class="match-title" data-i18n="euro_page.match_title"></div>
+    <div class="match-date" data-i18n="euro_page.match_date"></div>
+    <div class="match-container">
+      <div class="match-item">
+        <div class="match-flag">
+          <div class="match_team_logo match_team_1"></div>
+        </div>
+        <div class="match-name">
+          <div class="match_team_name match_name_1"></div>
+        </div>
+      </div>
+      <div class="vs" data-i18n="euro_page.VS"></div>
+      <div class="match-item">
+        <div class="match-flag">
+          <div class="match_team_logo match_team_2"></div>
+        </div>
+        <div class="match-name">
+          <div class="match_team_name match_name_2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="match-submit" data-i18n="euro_page.submit_btn" role="button" data-bs-toggle="modal" data-bs-target="#submitModal"></div>
+  </div>
+</div>
+
+<div class="block-container">
+  <div class="block-content">
+    <div class="match_flag">
+      @@include('./match-flag.html', { team: 'albania'})
+      @@include('./match-flag.html', { team: 'austria'})
+      @@include('./match-flag.html', { team: 'belgium'})
+      @@include('./match-flag.html', { team: 'clovenia'})
+      @@include('./match-flag.html', { team: 'croatiaa'})
+      @@include('./match-flag.html', { team: 'czech_republic'})
+      @@include('./match-flag.html', { team: 'denmark'})
+      @@include('./match-flag.html', { team: 'england'})
+      @@include('./match-flag.html', { team: 'france'})
+      @@include('./match-flag.html', { team: 'Georgia'})
+      @@include('./match-flag.html', { team: 'gernanny'})
+      @@include('./match-flag.html', { team: 'hungary'})
+      @@include('./match-flag.html', { team: 'italy'})
+      @@include('./match-flag.html', { team: 'netherlands'})
+      @@include('./match-flag.html', { team: 'poland'})
+      @@include('./match-flag.html', { team: 'portugal'})
+      @@include('./match-flag.html', { team: 'romania'})
+      @@include('./match-flag.html', { team: 'scotland'})
+      @@include('./match-flag.html', { team: 'serbia'})
+      @@include('./match-flag.html', { team: 'slovakia'})
+      @@include('./match-flag.html', { team: 'spain'})
+      @@include('./match-flag.html', { team: 'switzerland'})
+      @@include('./match-flag.html', { team: 'turkey'})
+      @@include('./match-flag.html', { team: 'ukaine'})
+    </div>
+  </div>
+</div>
+
+<div class="block-container">
+  <div class="block-content term-container">
+    <div class="term-title" data-i18n="world_up_page.Term_Conditions"></div>
+    <section class="term-content" data-i18n="euro_page.term_conditions_content"></section>
+  </div>
+</div>
+
+
+@@include('./submit-modal.html')

@@ -1,0 +1,180 @@
+.profile {
+  background-color: #F2F2F2;
+
+  &__content {
+    padding: 0;
+
+    form {
+      background: #FFFFFF;
+      padding: 15px;
+      margin-bottom: 30px;
+
+      .items {
+        margin-bottom: 15px;
+
+        .avatar {
+          border-bottom: 1px solid #EEEEEE;
+          padding-bottom: 15px;
+
+          &>div {
+            position: relative;
+            display: table;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 20px;
+              height: 20px;
+              background-image: url(../images/profile/avatarEdit.png);
+              background-repeat: no-repeat;
+            }
+
+            img {
+              width: 65px;
+              height: 65px;
+              object-fit: cover;
+            }
+          }
+
+        }
+
+        label {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+        }
+
+        .form-control {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+          border-radius: 0 !important;
+          border: none;
+          border-bottom: 1px solid #EEEEEE;
+          padding: 0px 0 15px;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &::placeholder {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            color: #CED4D9;
+          }
+
+          &:read-only {
+            background: transparent;
+          }
+        }
+
+        .input-group-text {
+          background: transparent;
+          border: none;
+          border-radius: 0 !important;
+          border-bottom: 1px solid #EEEEEE;
+          padding-top: 0;
+        }
+      }
+
+    }
+
+    &>.description {
+      padding: 0 15px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #6C7C9D;
+    }
+  }
+
+  .modal {
+    .modal-content {
+      min-height: 350px !important;
+      height: 40vh !important;
+      position: relative;
+
+      .select-profile-picture-modal {
+        &__items {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          flex-wrap: wrap;
+          padding: 30px 0;
+
+          &__item {
+            width: 25%;
+            text-align: center;
+            padding-bottom: 15px;
+            position: relative;
+
+            img {
+              width: 65px;
+              height: 65px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+
+            .checkmark {
+              width: 16px;
+              height: 16px;
+              background-image: url(../images/profile/check.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              position: absolute;
+              right: 15px;
+              bottom: 15px;
+              display: none;
+            }
+
+            input {
+              &:checked~.checkmark {
+                display: block;
+              }
+
+              &:checked~img {
+                border: 2px solid #597EF7;
+              }
+            }
+          }
+        }
+
+        .action {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          border-top: 1px solid #F2F2F2;
+
+          .btn {
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            &-select {
+              min-height: 40px;
+            }
+
+            &-cancel {
+              min-height: 60px;
+              border-top: 10px solid #F2F2F2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

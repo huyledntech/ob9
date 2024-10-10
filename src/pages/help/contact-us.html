@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Contact Us'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main help-page help-index contact-us">
+
+      <!-- navbar -->
+      @@include('../../components/help/navbar-child.html', {title: 'ONLINE_CUSTOMER_SERVICE', back_url: '/help/'})
+      <!-- navbar -->
+
+
+      <div class="help-page__content">
+        <div class="help-page__content__top">
+          <div class="help-page__content__top__content">
+            <div class="help-page__content__top__content__img">
+              <img src="assets/images/help/help-avatar.png" />
+            </div>
+            <div class="help-page__content__top__content__text">
+              <h3 data-i18n="help_page.hi"></h3>
+              <div data-i18n="help_page.welcome"></div>
+            </div>
+          </div>
+          <div class="help-page__content__top__subtext" data-i18n="help_page.problem"></div>
+          <div class="help-page__content__top__bg"></div>
+        </div>
+        
+          
+        <a href="/contact-us.html" class="help-page__content__contact-us">
+          <div data-i18n="Online_Customer_Service"></div>
+          <img src="assets/images/my-account/right.png">
+        </a>
+
+        <div class="help-page__content__footer mt-5" data-i18n="help_page.Need_assitance"></div>
+      </div>
+
+      
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

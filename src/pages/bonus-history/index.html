@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'BONUS_CENTER'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main bonus-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Bonus_Center', 
+      })
+
+      <div class="w-100 bg-white">
+        <div class="px-3 pt-2">
+          <ul class="nav nav-tabs nav-fill deposit__content__tab" id="depositTab" role="tablist">
+            <li class="nav-item deposit__content__tab__item" role="presentation">
+              <button class="nav-link deposit__content__tab__item__link active" id="cash-rebate-tab" data-bs-toggle="tab" data-bs-target="#cash-rebate" type="button" role="tab" aria-controls="cash-rebate" aria-selected="true">
+                <span data-i18n="CASH_REBATE"></span>
+              </button>
+            </li>
+            <li class="nav-item deposit__content__tab__item" role="presentation">
+              <button class="nav-link deposit__content__tab__item__link mid" id="weekly-angpow-tab" data-bs-toggle="tab" data-bs-target="#weekly-angpow" type="button" role="tab" aria-controls="weekly-angpow" aria-selected="false">
+                <span data-i18n="VIP_ANGPOW"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content deposit__content__tab_content" id="depositTabContent">
+          <div class="tab-pane fade show active" id="cash-rebate" role="tabpanel" aria-labelledby="cash-rebate-tab">
+            @@include('../../components/bonus-history/cash-rebate.html')
+          </div>
+          <div class="tab-pane fade" id="weekly-angpow" role="tabpanel" aria-labelledby="weekly-angpow-tab">
+            @@include('../../components/bonus-history/weekly-angpow.html')
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../../components/bonus-history/claim-success-modal.html')
+      <!-- MODAL -->
+
+
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

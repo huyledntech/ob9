@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Cryptocurrency Introduction'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main cryptocurrency-introduction">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/wallet/deposit.html?active=2', 
+        use_back_url: true, 
+        title: 'COMPARE_NETWORK', 
+      })
+      <div class="cryptocurrency-introduction__content">
+
+        <div class="cryptocurrency-introduction__content__items">
+          <div class="cryptocurrency-introduction__content__items__title" data-i18n="compare_network_page.title1"></div>
+          <div class="cryptocurrency-introduction__content__items__subtitle" data-i18n="compare_network_page.subtitle11"></div>
+          <div class="cryptocurrency-introduction__content__items__description" data-i18n="compare_network_page.description11"></div>
+          <div class="cryptocurrency-introduction__content__items__subtitle" data-i18n="compare_network_page.subtitle12"></div>
+          <div class="cryptocurrency-introduction__content__items__description" data-i18n="compare_network_page.description12"></div>
+        </div>
+          
+        <div class="cryptocurrency-introduction__content__items">
+          <div class="cryptocurrency-introduction__content__items__title long" data-i18n="compare_network_page.title2"></div>
+          <div class="cryptocurrency-introduction__content__items__table">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="compare_network_page.table.title1"></th>
+                  <th scope="col" data-i18n="compare_network_page.table.title2"></th>
+                  <th scope="col" data-i18n="compare_network_page.table.title3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row11"></th>
+                  <td data-i18n="compare_network_page.table.row12"></td>
+                  <td data-i18n="compare_network_page.table.row13"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row21"></th>
+                  <td data-i18n="compare_network_page.table.row22"></td>
+                  <td data-i18n="compare_network_page.table.row23"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row31"></th>
+                  <td data-i18n="compare_network_page.table.row32"></td>
+                  <td data-i18n="compare_network_page.table.row33"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row41"></th>
+                  <td data-i18n="compare_network_page.table.row42"></td>
+                  <td data-i18n="compare_network_page.table.row43"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row51"></th>
+                  <td data-i18n="compare_network_page.table.row52"></td>
+                  <td data-i18n="compare_network_page.table.row53"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row61"></th>
+                  <td data-i18n="compare_network_page.table.row62"></td>
+                  <td data-i18n="compare_network_page.table.row63"></td>
+                </tr>
+                <tr>
+                  <th scope="row" data-i18n="compare_network_page.table.row71"></th>
+                  <td data-i18n="compare_network_page.table.row72"></td>
+                  <td data-i18n="compare_network_page.table.row73"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+          
+        <div class="cryptocurrency-introduction__content__items">
+          <div class="cryptocurrency-introduction__content__items__title long" data-i18n="compare_network_page.title3"></div>
+          <div class="cryptocurrency-introduction__content__items__item2">
+            <div class="cryptocurrency-introduction__content__items__item2__content row">
+              <div class="col-3">
+                <img src="assets/images/wallet/cryptocurrency-introduction/11.png" />
+              </div>
+              <div class="col-9">
+                <div class="title" data-i18n="compare_network_page.title31"></div>
+                <div class="description" data-i18n="compare_network_page.description31"></div>
+              </div>
+            </div>  
+            <div class="cryptocurrency-introduction__content__items__item2__content row">
+              <div class="col-3">
+                <img src="assets/images/wallet/cryptocurrency-introduction/12.png" />
+              </div>
+              <div class="col-9">
+                <div class="title" data-i18n="compare_network_page.title32"></div>
+                <div class="description" data-i18n="compare_network_page.description32"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cryptocurrency-introduction__content__warning" data-i18n="compare_network_page.warning"></div>
+        
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

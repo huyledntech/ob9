@@ -1,0 +1,290 @@
+.withdrawal {
+  padding-top: 0;
+}
+.withdrawal__content {
+  background: #E8F5FF;
+  padding-left: 0;
+  padding-right: 0;
+}
+.withdrawal__content__withdrawal-verification {
+  background-image: url(../images/SG-verification-page/Frame-and-girl.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-left: 80px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+.withdrawal__content__withdrawal-verification span {
+  color: #3678FE;
+  font-size: 25px;
+  line-height: 45px;
+  display: block;
+}
+.withdrawal__content__withdrawal-verification .icon {
+  max-width: 150px;
+}
+.withdrawal__content__wallet {
+  background-image: url(../images/new-icons/mobile.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 20px 15px;
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+.withdrawal__content__wallet h3 {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 5px;
+}
+.withdrawal__content__wallet h3 img {
+  max-width: 20px;
+  margin: 0 !important;
+}
+.withdrawal__content__wallet p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: right;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 0;
+  display: block;
+}
+.withdrawal__content__wallet img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.withdrawal__content__bank-account {
+  background: #fff;
+  margin-top: 15px;
+  padding: 15px;
+}
+.withdrawal__content__bank-account__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  border-bottom: 2px solid #EEEEEE;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.withdrawal__content__bank-account__items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.withdrawal__content__bank-account__items__label {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 10px 15px;
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+}
+.withdrawal__content__bank-account__items__label__content {
+  display: flex;
+  place-items: center;
+  gap: 15px;
+}
+.withdrawal__content__bank-account__items__label__content__img {
+  min-height: 30px;
+}
+.withdrawal__content__bank-account__items__label__content__img img {
+  max-width: 30px;
+}
+.withdrawal__content__bank-account__items__label__content__title {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+}
+.withdrawal__content__bank-account__items__label__status {
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  position: absolute;
+  right: 40px;
+}
+.withdrawal__content__bank-account__items__label__status.verifying {
+  background-color: #F4D48C;
+}
+.withdrawal__content__bank-account__items__label__status.verified {
+  background-color: #597EF7;
+}
+.withdrawal__content__bank-account__items__label .checkmark {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/wallet/deposit/check-none.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.withdrawal__content__bank-account__items__label__checkbox {
+  display: none;
+}
+.withdrawal__content__bank-account__items__label__checkbox:checked ~ .checkmark {
+  background-image: url(../images/wallet/deposit/checked.png);
+}
+.withdrawal__content__bank-account__items.crypto {
+  max-height: 270px;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label {
+  background-image: url(../images/new-icons/desktop.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 80px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label .checkmark {
+  width: 20px;
+  height: 20px;
+  background-image: none;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label__checkbox {
+  display: none;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label__checkbox:checked ~ .checkmark {
+  background-image: url(../images/new-icons/check.svg);
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 100%;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label .withdrawal__content__bank-account__items__label__content__title {
+  color: #FFFFFF;
+  text-align: left;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label .withdrawal__content__bank-account__items__label__content__title > div:nth-child(2) {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+}
+.withdrawal__content__bank-account__items.crypto .withdrawal__content__bank-account__items__label .withdrawal__content__bank-account__items__label__content__title > div:nth-child(3) {
+  margin-top: 8px;
+}
+.withdrawal__content__bank-account__add-bank {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  padding: 15px;
+  padding-bottom: 0;
+}
+.withdrawal__content__description {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+  color: #A5A9B3;
+  padding: 15px;
+}
+.withdrawal__content__input {
+  padding: 15px;
+  background: #fff;
+}
+.withdrawal__content__input .input-group {
+  background: #E8F5FF;
+  border-radius: 10px;
+}
+.withdrawal__content__input .input-group input {
+  border: none;
+  background-color: transparent;
+}
+.withdrawal__content__input .input-group-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  background: transparent;
+  border: none;
+}
+.withdrawal__content__input .input-group-text.withdrawal-max-value {
+  color: #597EF7;
+}
+.withdrawal__content__input .input-group-text.left {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.withdrawal__content__input .input-group-text.right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  padding-right: 0;
+  padding-left: 20px;
+}
+.withdrawal__content__input .input-group-text.right img {
+  margin-right: 5px;
+}
+.withdrawal__content__input .form-control {
+  border: 1px solid #A5A9B3;
+  box-sizing: border-box;
+  border-radius: 10px !important;
+  min-height: 40px;
+}
+.withdrawal__content__input .form-control::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  color: #A5A9B3;
+}
+.withdrawal__content__submit {
+  padding: 15px;
+}
+.withdrawal__content__submit .btn {
+  width: 100%;
+  min-height: 50px;
+}
+.withdrawal__content__help {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+  padding: 15px;
+}
+
+.btn-delete-wallet {
+  position: absolute;
+  padding: 0;
+  right: 2px;
+  width: 30px;
+  left: auto;
+  min-width: auto;
+}
+.btn-delete-wallet img {
+  height: 30px;
+}

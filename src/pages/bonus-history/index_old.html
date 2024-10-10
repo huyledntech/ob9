@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'BONUS_CENTER'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main bonus-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Bonus_History', 
+        nav_expand_url: '../bonus-history/nav-expand.html',
+        nav_expand_active_btn: 0,
+        nav_expand_active_btn_text: 'bonus_history_page.Unclaim'
+      })
+      <div class="bonus-history__items">
+        <div class="bonus-history__items__item row">
+          <div class="bonus-history__items__item__left col-8">
+            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.Cash_Rebate"></div>
+            <div class="bonus-history__items__item__left__price">MYR30.00</div>
+            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
+          </div>
+          <div class="bonus-history__items__item__right col-4">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
+            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
+          </div>
+        </div>
+
+        <div class="bonus-history__items__item row">
+          <div class="bonus-history__items__item__left col-8">
+            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.VIP_Tier_Upgrade_Bonus"></div>
+            <div class="bonus-history__items__item__left__price">MYR30.00</div>
+            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
+          </div>
+          <div class="bonus-history__items__item__right col-4">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
+            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
+          </div>
+        </div>
+
+        <div class="bonus-history__items__item row">
+          <div class="bonus-history__items__item__left col-8">
+            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.Birthday_Bonus"></div>
+            <div class="bonus-history__items__item__left__price">MYR30.00</div>
+            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
+          </div>
+          <div class="bonus-history__items__item__right col-4">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
+            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../../components/bonus-history/claim-success-modal.html')
+      <!-- MODAL -->
+
+
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

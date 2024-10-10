@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'ADD BANK ACCOUNT'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main add-bank-account">
+      @@include('../components/base/navbar-child.html', {back_url: '/wallet', title: 'UPLOAD_BANK_STATEMENT_FOR_VERIFICATION'})
+      <div class="add-bank-account__content container-fluid">
+
+        <div class="add-bank-account__content__input">
+          <div class="items">
+            <label class="form-label" data-i18n="Full_Name">Full Name</label>
+            <input type="text" class="form-control" placeholder="" value="TAN MING ZHI" disabled />
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description"></div>
+
+        <div class="add-bank-account__content__input">
+          <div class="items">
+            <label class="form-label" data-i18n="Bank_Account_Number"></label>
+            <input type="text" class="form-control" data-i18n="Please_select_your_bank" data-i18n-attr="placeholder" placeholder="" value="RHB BANK" />
+          </div>
+          <div class="items">
+            <label class="form-label" data-i18n="Bank_Account_Number"></label>
+            <input type="text" class="form-control" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" data-i18n-attr="placeholder" placeholder="" value="1234567890" />
+          </div>
+          <div class="items">
+            <label for="staticEmail" class="col-3 form-label" data-i18n="withdrawal_verification_page.Attachment"></label>
+            <div class="">
+              <div class="input-group align-items-center">
+                <div class="custom-file">
+                  <label class="btn btn-secondary" for="inputGroupFile03" data-i18n="choose_file"></label>
+                  <input type="file" class="custom-file-input d-none" id="inputGroupFile03" />
+                  <input type="text" class="form-control custom-file-input-label" disabled data-i18n="no_file_chosen" data-i18n-attr="placeholder" />
+                </div>
+                <button class="btn btn-primary justify-content-center align-items-center" type="button" data-i18n="withdrawal_verification_page.Upload"></button>
+              </div>
+              <div class="form-text py-3" data-i18n="withdrawal_verification_page.attachment_help"></div>
+              <div class="form-text text-primary" data-i18n="withdrawal_verification_page.attachment_help1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="add-bank-account__content__description">
+          Please enter correct details for process withdrawal
+        </div> -->
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description"></div>
+
+        <div class="add-bank-account__content__submit">
+          <!-- <button class="btn btn-primary" data-i18n="SUBMIT" disabled>SUBMIT</button> -->
+          <div class="add-bank-account__content__submit">
+            <a href="/withdrawal-verification-list.html" class="btn btn-primary disabled" data-i18n="SUBMIT">SUBMIT</a>
+          </div>
+        </div>
+
+        <div class="add-bank-account__content__help" data-i18n="Need_assistance"></div>
+
+
+        <!-- MODAL -->
+        @@include('../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

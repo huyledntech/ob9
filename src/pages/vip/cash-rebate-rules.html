@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'NEW USER GUIDE'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main vip-cash-rebate-rules">
+
+      <!-- navbar -->
+      @@include('../../components/base/navbar-child.html', {
+        title: 'CASH_REBATE_RULES',
+        back_url: '/vip/',
+      })
+      <!-- navbar -->
+
+      <ul class="vip-cash-rebate-rules__content">
+        <li data-i18n="cash-rebate-rules-page.content1"></li>
+        <li data-i18n="cash-rebate-rules-page.content2"></li>
+        <li data-i18n="cash-rebate-rules-page.content3"></li>
+        <li data-i18n="cash-rebate-rules-page.content4"></li>
+        <li data-i18n="cash-rebate-rules-page.content5"></li>
+      </ul>
+
+      
+      @@include('../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

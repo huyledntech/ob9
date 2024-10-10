@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../../components/base/header.html', {title: 'GAME GUIDE'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main help-page">
+
+      <!-- navbar -->
+      @@include('../../../components/base/navbar-child.html', {
+        title: 'help_page.GAME_GUIDE',
+        back_url: '/help/',
+        right_expand_icon: '../help/nav-right-icon.html',
+        right_expand_icon_url: '/help/',
+      })
+      <!-- navbar -->
+
+
+      <div class="help-page__content">
+        <div class="help-page__content__content">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="/help/game-guide/lottery-guide.html">
+                <span data-i18n="help_page.Lottery_Guide"></span>
+                <img class="right" src="assets/icons/right.png" />
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="/help/game-guide/sport-guide.html">
+                <span data-i18n="help_page.Sport_Guide"></span>
+                <img class="right" src="assets/icons/right.png" />
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="/help/game-guide/live-casino-guide.html">
+                <span data-i18n="help_page.Live_Casino_Guide"></span>
+                <img class="right" src="assets/icons/right.png" />
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="/help/game-guide/e-sport-guide.html">
+                <span data-i18n="help_page.E_sport_Guide"></span>
+                <img class="right" src="assets/icons/right.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="help-page__content__footer" data-i18n="help_page.Need_assitance"></div>
+      </div>
+
+      
+      @@include('../../../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../../../components/base/footer.html')
+  </body>
+</html>

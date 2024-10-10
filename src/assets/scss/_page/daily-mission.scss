@@ -1,0 +1,192 @@
+.daily-mission {
+  padding-bottom: 80px;
+  padding-top: 60px;
+  background-color: #fff;
+  font-size: 12px;
+
+  &__content {
+
+    &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+
+      margin-bottom: 20px;
+
+      text-transform: capitalize !important;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid #ddd;
+      position: relative;
+
+      span {
+        position: relative;
+
+        &::before {
+          content: " ";
+          position: absolute;
+          bottom: -12px;
+          left: 10px;
+          right: 10px;
+          height: 4px;
+          background: rgb(130, 185, 255);
+          background: linear-gradient(0deg, rgba(130, 185, 255, 1) 0%, rgba(105, 212, 255, 1) 100%);
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+    }
+
+    .btn {
+      border: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .badge-time {
+      background-color: #d6f0fb;
+      padding: 2px 10px;
+      border-radius: 15px;
+      color: #999;
+      font-size: 12px;
+    }
+
+    .btn-spin,
+    .btn-claimall {
+      padding: 3px 20px;
+      border-radius: 15px;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .btn-spin {
+      background: rgb(138, 16, 188);
+      background: linear-gradient(100deg, rgba(138, 16, 188, 1) 0%, rgba(234, 95, 240, 1) 100%);
+      position: relative;
+      padding-left: 30px;
+
+      img {
+        position: absolute;
+        left: -20px;
+      }
+    }
+
+    .btn-claimall {
+      background: rgb(59, 237, 172);
+      background: linear-gradient(100deg, rgba(59, 237, 172, 1) 0%, rgba(27, 253, 161, 1) 100%);
+    }
+
+    .badge-total-point {
+      background-color: #f3f3f3;
+      padding: 5px 15px;
+      border-radius: 15px;
+
+      span {
+        color: #7bb0ec;
+      }
+    }
+
+    .mission-item {
+      padding: 10px;
+      border-radius: 12px;
+      background-color: #f3f3f3;
+      box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+      -webkit-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+
+      .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .btn-start,
+      .btn-claim {
+        padding: 5px 15px;
+        border-radius: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .btn-start {
+        background: rgb(52, 212, 217);
+        background: linear-gradient(100deg, rgba(52, 212, 217, 1) 0%, rgba(213, 252, 156, 1) 100%);
+        box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+        -webkit-box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+        -moz-box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+      }
+
+      .btn-claim {
+        background: rgb(107, 210, 255);
+        background: linear-gradient(100deg, rgba(107, 210, 255, 1) 0%, rgba(139, 176, 255, 1) 100%);
+        box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+        -webkit-box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+        -moz-box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+
+        &:disabled {
+          background: #ddd;
+          box-shadow: -1px -1px 10px 0px #999;
+          -webkit-box-shadow: -1px -1px 10px 0px #999;
+          -moz-box-shadow: -1px -1px 10px 0px #999;
+        }
+      }
+
+      .progress {
+        width: 150px;
+        height: 12px;
+        border-radius: 15px;
+        position: relative;
+        background: rgb(225, 222, 219);
+        background: linear-gradient(100deg, rgba(225, 222, 219, 1) 0%, rgba(212, 208, 203, 1) 100%);
+
+        .progress-label {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 9px;
+        }
+
+        .progress-bar {
+          text-transform: uppercase;
+          background: rgb(107, 211, 255);
+          background: linear-gradient(100deg, rgba(107, 211, 255, 1) 0%, rgba(139, 177, 255, 1) 100%);
+        }
+      }
+    }
+
+
+  }
+
+
+  #dailyMissionModal {
+
+    .modal-content {
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+
+      a {
+        color: #7bb0ec;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

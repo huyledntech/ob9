@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'BLOG DETAIL'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main blog-page">
+
+      <!-- navbar -->
+      @@include('../components/base/navbar-child.html', {
+        title: 'blog_page.BLOG_DETAIL',
+        back_url: '/',
+        right_expand_icon: '../help/nav-right-icon.html',
+        right_expand_icon_url: '/help/',
+      })
+      <!-- navbar -->
+
+      <!-- content -->
+      @@include('../components/blog/detail.html')
+      <!-- content -->
+      
+
+      
+      @@include('../components/base/navbar-bottom.html')
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

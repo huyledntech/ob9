@@ -1,0 +1,1110 @@
+.uefa-euro-block {
+  padding-bottom: 0;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: bottom;
+
+  &.perdict-event {
+    background-image: url(../images/euro/prediction-event/BG.png);
+  }
+
+  &.pentalty-shoot {
+    background-image: url(../images/euro/penalty/BG.png);
+  }
+
+  &.match-prediction {
+    background-image: url(../images/euro/match-prediction/BG.png);
+  }
+
+  &__content {
+    padding: 0 0 20vh;
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  #bannerTab2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  #bannerTab3 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .block-container {
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    &.blue-bg {
+      background: #d9eaff;
+    }
+
+    .match-title {
+      text-align: center;
+
+      img {
+        max-height: 30px;
+      }
+    }
+
+    &.text {
+
+      h3 {
+        color: #fcb33c;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+
+    .block-content {
+      background-color: transparent;
+      border-radius: 30px;
+      overflow: hidden;
+      min-height: 50px;
+      height: 100%;
+
+      &.blue-border {
+        border: 2px solid #349dff;
+      }
+
+      .match_flag {
+        display: flex;
+        place-items: center;
+        place-content: center;
+        flex-wrap: wrap;
+        gap: 7px;
+        padding: 5px;
+
+        .match_flag_item {
+          padding: 5px;
+          border-radius: 3px;
+
+          &:hover {
+            background-color: #349dff;
+          }
+
+          img {
+            width: 35px;
+          }
+        }
+      }
+
+      .match-date {
+        text-align: center;
+        position: relative;
+        margin-top: 15px;
+
+        img {
+          max-height: 25px;
+        }
+      }
+
+      .match-container {
+        padding: 20px 10px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 15px;
+
+        .match-item {
+          min-width: 140px;
+          border-radius: 20px;
+          border: 3px solid #fff;
+          padding: 5px;
+          position: relative;
+          background-color: transparent;
+          box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+          -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+
+          .match-flag {
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-image: url(../images/euro/match-prediction/match-bg.png);
+            background-position: center;
+            margin-bottom: 10px;
+            min-height: 130px;
+            box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            .match_team_logo {
+              max-width: 55px;
+              padding-bottom: 15px;
+            }
+          }
+
+          .match-name {
+            border-radius: 25px;
+            background-color: #fff;
+            box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+            min-height: 30px;
+            margin-bottom: 10px;
+
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            .match_team_name {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 12px;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            width: 50%;
+            height: 5px;
+            background-color: #349dff;
+            margin: auto;
+            left: 0;
+            right: 0;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+        }
+
+        .vs {
+          font-size: 20px;
+          font-weight: 900;
+          color: #349dff;
+        }
+      }
+
+      .match-submit {
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+          max-height: 40px;
+        }
+      }
+
+      &.term-container {
+        background-color: #f4f7ff;
+        border: 3px solid #fff;
+        border-radius: 20px;
+
+        .term-title {
+          background: #fff;
+          padding: 10px 20px;
+          display: inline-block;
+          margin-left: 50px;
+          font-size: 16px;
+          font-weight: 500;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          color: #0c66d8;
+        }
+
+        .term-content {
+          min-height: 300px;
+          padding: 20px 10px;
+          font-size: 12px;
+          line-height: 18px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          table {
+            margin: 0 auto 30px;
+
+            tr {
+              th {
+                padding: 8px;
+                text-align: center;
+                border: 1px solid #07182a;
+                border-collapse: collapse;
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.prize-container {
+        background-color: #f4f7ff;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        place-items: center;
+
+        .prize-title {
+          background: #fff;
+          padding: 3px 15px;
+          display: inline-block;
+          font-size: 12px;
+          font-weight: 500;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          color: #0c66d8;
+        }
+
+        .prize-content {
+          min-height: 300px;
+          padding: 20px 10px;
+          font-size: 12px;
+          line-height: 18px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          table {
+            margin: 0 auto 30px;
+
+            tr {
+              th {
+                padding: 8px;
+                text-align: center;
+                border: 1px solid #07182a;
+                border-collapse: collapse;
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.penalty-container {
+      background-color: #d9eaff !important;
+
+      .block-content {
+        background-color: #fff !important;
+        border-radius: 20px;
+        padding: 7px;
+
+        .penalty-player {
+          border: 4px solid #349dff;
+          border-radius: 20px;
+          min-height: 320px;
+          margin-bottom: 20px;
+          position: relative;
+          overflow: hidden;
+
+          .penalty-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .penalty-how-to-play {
+          text-align: center;
+          margin-bottom: 15px;
+
+          img {
+            max-height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .block-content-no-style {
+    margin-bottom: 10px;
+  }
+
+  .block-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #0c66d8;
+    padding: 10px 0;
+    line-height: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      height: 20px;
+      width: 20px;
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-image: url(../images/euro/prediction-event/left.png);
+      background-position: center;
+      margin: auto;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      top: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 25%;
+      height: 20px;
+      width: 20px;
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-image: url(../images/euro/prediction-event/right.png);
+      background-position: center;
+      margin: auto;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.uefa-euro-page {
+  &__top-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    padding: 0;
+
+    &__tab {
+      width: 100%;
+      margin: auto;
+
+      .tab-content {
+        padding-top: 20px;
+
+        #tab3,
+        #tab2 {
+          padding: 0 10px;
+        }
+      }
+
+      .nav-tabs {
+        border-bottom: none;
+        box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+        -webkit-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+        -moz-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+        border-radius: 20px;
+        overflow: hidden;
+        gap: 5px;
+
+        .nav-item {
+          padding: 2px;
+          position: relative;
+
+          .nav-link {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            // border-top: 2px solid #a7c5ff;
+            // border-bottom: 2px solid #a7c5ff;
+            // border-left: 1px solid #a7c5ff;
+            // border-right: 1px solid #a7c5ff;
+            border: none;
+            text-shadow: none;
+            min-height: 30px;
+            border-radius: 0;
+            font-size: 12px;
+            height: 100%;
+            font-weight: 700;
+            border-radius: 20px;
+            padding: 3px 5px;
+
+            &.active {
+              color: #fff;
+              text-shadow: none;
+              background: #0c66d8;
+              // border: 2px solid #719cfd;
+            }
+          }
+
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -3px;
+            height: 30%;
+            width: 1px;
+            background: #0c66d8;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+            -webkit-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+            -moz-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+            overflow: hidden;
+            opacity: 0.5;
+
+          }
+
+          // &:first-child {
+          //   .nav-link {
+          //     border-top-left-radius: 10px;
+          //     border-bottom-left-radius: 10px;
+          //     border-left: 2px solid #a7c5ff;
+          //   }
+          // }
+
+          // &:last-child {
+          //   .nav-link {
+          //     border-top-right-radius: 10px;
+          //     border-bottom-right-radius: 10px;
+          //     border-right: 2px solid #a7c5ff;
+          //   }
+          // }
+        }
+      }
+    }
+
+    &__block_content {
+      border-radius: 15px;
+      height: 100%;
+
+      // background-size: 101%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../images/world-cup/box-bg.png);
+      background-position: top;
+
+      font-size: 14px;
+      line-height: 25px;
+
+      p {
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 14px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &.event-detail {
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-image: url(../images/world-cup/en/Line-frame.png);
+        // background-position: top;
+        // padding: 0 30px 30px;
+        background-image: none;
+        position: relative;
+        padding-bottom: 50px;
+        padding-top: 20px;
+
+        &::before {
+          // position: absolute;
+          // left: 0;
+          display: block;
+          content: "";
+          width: 100%;
+          height: 50px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url(../images/world-cup/en/common-border-top.f3155c653ae076c1c651baab081c12eb.webp);
+        }
+
+        &::after {
+          position: absolute;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 50px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url(../images/world-cup/en/common-border-bottom.86132a89c2cafb679ad4578bbbb8655a.webp);
+        }
+
+        .event-detail-content {
+          // background-position: 0 0;
+          background-size: 100%;
+          background-repeat: repeat-y;
+          background-image: url(../images/world-cup/en/common-border-middle.88ffae16aba74af2bbc9473fc6f103b6.webp);
+          padding: 0 30px 30px;
+
+          &__header {
+            text-align: center;
+
+            img {
+              max-width: 350px;
+              margin: 20px auto 50px;
+            }
+          }
+
+          &__item {
+            display: flex;
+            place-content: flex-start;
+            place-items: center;
+            font-size: 18px;
+            line-height: 26px;
+            gap: 15px;
+            margin-bottom: 5px;
+
+            &__title {
+              color: #ba1643;
+              font-weight: 600;
+            }
+
+            &__content {}
+
+          }
+
+          &__description {
+            list-style: numeric;
+            margin-top: 50px;
+
+            li {
+              font-size: 18px;
+              line-height: 26px;
+              margin-bottom: 10px;
+            }
+          }
+
+          &__table {
+            margin-top: 50px;
+
+            .table {
+              border-top-left-radius: 12px;
+              border-top-right-radius: 12px;
+              overflow: hidden;
+
+              &>:not(caption)>*>* {
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+
+              thead {
+                tr {
+                  th {
+                    background-image: url(../images/world-cup/en/PINK_BAR.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    // background: rgb(207, 60, 102);
+                    // background: linear-gradient(21deg, rgba(207, 60, 102, 1) 20%, rgba(229, 88, 142, 1) 23%, rgba(207, 60, 102, 1) 72%, rgba(241, 110, 157, 1) 78%);
+                    color: #fff;
+                    // border-right: 1px solid #ffcfdb;
+                    border: 1px solid #ffcfdb !important;
+
+                    font-size: 18px;
+                  }
+                }
+              }
+
+              tbody {
+                border-top: none !important;
+
+                tr {
+                  border-color: #ffcfdb;
+
+                  td {
+                    border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .header {
+          font-size: 25px;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-align: center;
+          margin-top: -8px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 22px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+
+          span {
+            background: #fff;
+            padding: 0 20px;
+          }
+        }
+
+      }
+
+
+      &__title {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/world-cup/en/PINK_LongBAR.png);
+        background-position: center;
+        // background: rgb(207, 60, 102);
+        // background: linear-gradient(90deg, rgba(207, 60, 102, 1) 0%, rgba(237, 130, 157, 1) 36%, rgba(231, 115, 145, 1) 66%, rgba(207, 60, 102, 1) 100%);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        padding: 3px 15px;
+        display: inline-block;
+      }
+
+      &__table {
+        margin-top: 15px;
+
+        .table-footer {
+          text-align: right;
+          padding-top: 10px;
+          border-top: 2px solid #999;
+          display: flex;
+          place-content: flex-end;
+          place-items: center;
+          gap: 5px;
+
+          font-weight: 600;
+          color: initial;
+        }
+
+        .table {
+          margin-bottom: 0;
+
+          &>:not(caption)>*>* {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+
+          thead {
+            tr {
+              th {
+                background-image: url(../images/world-cup/en/PINK_BAR.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                // background: rgb(207, 60, 102);
+                // background: linear-gradient(21deg, rgba(207, 60, 102, 1) 20%, rgba(229, 88, 142, 1) 23%, rgba(207, 60, 102, 1) 72%, rgba(241, 110, 157, 1) 78%);
+                color: #fff;
+                border-right: 3px solid #f2f2f4;
+
+                font-size: 18px;
+                vertical-align: middle;
+
+                &:last-child {
+                  border-right: none;
+                }
+              }
+            }
+          }
+
+          tbody {
+            border-top: none !important;
+
+            tr {
+              td {
+                border-bottom: none;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .play-now {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../images/world-cup/en/bg_loading_bonus.jpg);
+      background-position: center;
+      position: relative;
+      border: 3px solid #cf3c66;
+      border-radius: 8px;
+      min-height: 500px;
+
+      &>div {
+        background-color: rgba(0, 0, 0, 0.7);
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &__ticker_remaining {
+        position: absolute;
+        left: 5px;
+        top: 0;
+        background-image: url(../images/euro/penalty/ticket_remaining.png);
+        min-width: 150px;
+        min-height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        place-items: center;
+        place-content: space-around;
+
+        .text {
+          font-size: 12px;
+          font-weight: 600;
+          color: #fff;
+        }
+
+        .number {
+          padding-right: 13px;
+          font-size: 15px;
+          font-weight: 800;
+          color: #0c66d8;
+        }
+      }
+
+      &__world-cup-logo {
+        width: 65px;
+        right: 5px;
+        top: 5px;
+        position: absolute;
+      }
+
+      &__tap-to-play {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+
+        img {
+          max-width: 90px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    &__how-to-play-img {
+      width: 100%;
+      border: 3px solid #cf3c66;
+      border-radius: 15px;
+    }
+
+    &__how-to-play-btn {
+      margin: auto;
+      margin-top: 15px;
+      background-image: url(../images/world-cup/en/Bontton.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent !important;
+      border: none;
+      // background: rgb(2, 0, 36);
+      // background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(237, 130, 157, 1) 0%, rgba(207, 60, 102, 1) 100%);
+      // border: 2px solid #cf3c66;
+      border-radius: 8px;
+      min-height: 50px;
+      min-width: 200px;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active,
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .event-detail {
+    .modal-content {
+      background: transparent;
+      box-shadow: none;
+      border: none;
+
+      .modal-content-all {
+
+        .modal-header {
+          border-top: none;
+          border-bottom: none;
+          place-content: flex-end;
+          padding: 0;
+
+          .btn {
+            padding: 0;
+
+            img {
+              max-width: 40px;
+            }
+
+            &:active,
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .modal-body {
+          border: 3px solid #2c71a7;
+          border-bottom-width: 8px;
+          border-top-width: 1px;
+          border-radius: 20px;
+          background-color: #1e3970;
+          box-shadow: 1px -1px 100px 1px #152849 inset;
+          -webkit-box-shadow: 1px -1px 100px 1px #152849 inset;
+          -moz-box-shadow: 1px -1px 100px 1px #152849 inset;
+          padding: 30px;
+          color: #FFFFFF;
+          overflow: auto;
+          max-height: 90vh;
+          font-size: 12px;
+          line-height: 20px;
+
+          h4 {
+            font-size: 12px;
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+
+          table {
+            margin: 0 auto 30px;
+
+            thead {
+              tr {
+                th {
+                  background-color: #083763;
+                  padding: 2px 4px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  background-color: #0d5394;
+                  padding: 2px 4px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #howToPlayModal {
+    .modal-dialog {
+      .modal-content {
+        background: transparent;
+        box-shadow: none;
+        border: none;
+
+        .modal-content-all {
+          background-image: url(../images/world-cup/how-to-play-bg.png);
+          background-size: initial;
+          background-repeat: repeat-y;
+          background-position: top;
+          border: 2px solid #b4b4b4;
+          border-radius: 15px;
+        }
+
+        .modal-footer {
+          border-top: none;
+          place-content: center;
+          padding: 0;
+
+          .btn {
+            padding: 0;
+
+            img {
+              max-width: 50px;
+            }
+
+            &:active,
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .modal-header {
+          border-bottom: none;
+          padding: 0;
+          place-content: center;
+
+          &__title {
+            background: #0c66d8;
+            padding: 10px 40px;
+            display: inline-block;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            padding: 3px 40px;
+            height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+          }
+        }
+
+        .modal-body {
+          padding: 0 15px 15px;
+          text-align: center;
+
+          .steps {
+            padding: 30px 30px 0;
+
+            &>div {
+              margin-bottom: 20px;
+            }
+
+            &__item {
+              background-color: #fff;
+              border-radius: 15px;
+              height: 100%;
+              padding: 0 15px 15px;
+              box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+              -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+              -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+
+              &__title {
+                background: #0c66d8;
+                padding: 12px 50px;
+                display: inline-block;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                padding: 3px 15px;
+                min-height: 35px;
+                display: flex;
+                place-content: center;
+                place-items: center;
+              }
+
+              &__img {
+                height: 100px;
+                padding: 10px;
+              }
+
+              &__description {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--bs-body-color);
+                min-height: 50px;
+                display: flex;
+                place-content: center;
+                place-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.event-icon {
+  position: fixed;
+  left: 30px;
+  bottom: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: flex-end;
+  gap: 10px;
+
+  img {
+    max-width: 120px;
+  }
+
+  .btn-close {
+    position: initial !important;
+    padding: 5px;
+
+    &:focus,
+    &:active {
+      box-shadow: none !important;
+    }
+  }
+}

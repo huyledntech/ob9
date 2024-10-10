@@ -1,0 +1,54 @@
+<div class="total-nav row">
+  <div class="total-nav__items col-6">
+    <div data-i18n="bonus_history_page.Unclaim"></div>
+    <span>0.48</span>
+  </div>
+  <div class="total-nav__items col-6">
+    <div data-i18n="bonus_history_page.Total_Claim"></div>
+    <span>0.05</span>
+  </div>
+</div>
+<div class="nav-expand">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle bonus-history-dropdown" type="button" id="dropdownMenuDeposit" data-bs-toggle="dropdown" aria-expanded="false">
+      <span data-i18n="@@nav_expand_active_btn_text"></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuDeposit">
+      <a href="/bonus-history/unclaim.html" class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 1) {active}" data-i18n="bonus_history_page.Unclaim"></a>
+      <a href="/bonus-history/claim.html" class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 2) {active}" data-i18n="bonus_history_page.Claim"></a>
+      <div class="pb-2 w-100"></div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle bonus-history-dropdown" type="button" id="dropdownMenuLast7Days" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="Last_7_Days">
+      Last 7 Days
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLast7Days">
+      <div class="description" data-i18n="bonus_history_you_may"></div>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 6) {active}" data-i18n="Today">Today</button>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 7) {active}" data-i18n="Last_7_Days">Last 7 Days</button>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 8) {active}" data-i18n="Last_15_Days">Last 15 Days</button>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 9) {active}" data-i18n="This_Month">This Month</button>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 10) {active}" data-bs-toggle="collapse" href="#collapseCustomDate" data-i18n="Custom">Custom</button>
+      <div class="pb-2 w-100"></div>
+      <div class="collapse" id="collapseCustomDate">
+        <div class="row">
+          <label for="Start_Date" class="col-6 col-form-label" data-i18n="Start_Date">Start Date</label>
+          <div class="col-6">
+            <input type="text" class="form-control date-picker" id="Start_Date" value="2022-01-30">
+          </div>
+        </div>
+        <div class="row">
+          <label for="End_Date" class="col-6 col-form-label" data-i18n="End_Date">End Date</label>
+          <div class="col-6">
+            <input type="text" class="form-control date-picker" id="End_Date" value="2022-01-30">
+          </div>
+        </div>
+        <div class="action">
+          <a class="btn btn-cancel" data-bs-toggle="collapse" href="#collapseCustomDate" data-i18n="wallet_page.transaction-history.Cancel">Cancel</a>
+          <a class="btn btn-confirm" href="/bonus-history/" data-i18n="wallet_page.transaction-history.Confirm">Confirm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<div class="section-content border-radius-bottom mb-3">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="select_bank">Select Bank</div>
+    <div class="deposit-items__content">
+      @@include('../../select-bank.html')
+    </div>
+  </div>
+  
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="banking_details">Banking Details</div>
+    <div class="deposit-items__content">
+      <div class="row pb-4">
+        <div class="col">
+          <div class="text-primary mb-2" data-i18n="Bank_Account_Name">Bank Account Name</div>
+          <h3>KYC ENTERPRISE</h3>
+        </div>
+        <div class="col text-end">
+          <button class="btn btn-primary" data-i18n="copy" data-bs-toggle="modal" data-bs-target="#copySuccessModal">Copy</button>
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col">
+          <div class="text-primary mb-2" data-i18n="Bank_Account_Number">Bank Account Number</div>
+          <h3>1002020000</h3>
+        </div>
+        <div class="col text-end">
+          <button class="btn btn-primary" data-i18n="copy" data-bs-toggle="modal" data-bs-target="#copySuccessModal">Copy</button>
+        </div>
+      </div>
+      <div class="row align-items-center pb-5">
+        <div class="col-12 text-center">
+          <img src="assets/images/new-icons/qr.png" class="max-w-200px m-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="Deposit_Amount">Deposit Amount</div>
+    <div class="deposit-items__content">
+      @@include('../../deposit-amount.html', {
+        disabled_submit: true,
+        select_promotion: './wallet/select-promotion.html'
+      })
+    </div>
+  </div>
+</div>
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="Attention">Attention</div>
+    <div class="deposit-items__content">
+      <ul>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_1">Fund deposited from a 3rd party bank account that are <strong class="text-danger">NOT</strong> in your own name or <strong class="text-danger">NOT</strong> registered with OB will <strong class="text-danger">NOT</strong> be accepted.</li>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_2">Kindly check our latest active bank accounts before making new deposit.</li>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_3">
+          Please <strong class="text-danger">DO NOT</strong> key in any sensitive words in “Recipient Reference/ Other Payment Details” when making transfer.
+          <br/>Example : OB Entertainment, OB9, BET, Casino and etc.
+        </li>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_4">Please submit the deposit form after the transfer so that we can process your deposit more quickly once we receive your fund. </li>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_5">Please upload receipt to enjoy faster and bettter experiences.</li>
+        <li data-i18n="wallet_page.Attention.online_banking.Line_6">Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed.</li>
+      </ul>
+    </div>
+  </div>
+</div>

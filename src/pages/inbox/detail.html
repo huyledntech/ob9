@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Inbox Detail'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main inbox ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/', 
+        title: 'inbox', 
+      })
+      <div class="inbox__detail">
+        <div class="inbox__detail__top">
+          <div class="inbox__detail__top__img"><img src="assets/images/inbox/2.png" /></div>
+          <div class="inbox__detail__top__content">
+            <div class="inbox__detail__top__content__title" data-i18n="inbox_page.title1"></div>
+            <div class="inbox__detail__top__content__date">2022-03-14 10:30:35</div>
+          </div>
+        </div>
+        <div class="inbox__detail__bottom" data-i18n="inbox_page.description1"></div>
+      </div>
+
+      <!-- MODAL -->
+      <!-- MODAL -->
+
+
+      @@include('../../components/base/navbar-bottom.html', {active: -1})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

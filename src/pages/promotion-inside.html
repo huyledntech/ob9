@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Promotion'})
+  <body>
+    
+    <!-- Content -->
+    <section id="sponsorsPage" class="main sponsors-article">
+      @@include('../components/base/navbar-child.html', {back_url: '/sponsors', title: 'Monthly_VIP_Red_Packet_Giveaway'})
+      <div class="sponsors-article__content">
+
+       <img src="assets/images/promotion-inside.png" />
+        
+        <div class="sponsors-article__content__items no-boder">
+          <h4 class="sponsors-article__content__items__title" data-i18n="promo_page_inside.title"></h4>
+
+          <p class="sponsors-article__content__items__description pt-0 mb-0" data-i18n="promo_page_inside.description1"></p>
+          <p class="sponsors-article__content__items__description pt-0 mb-0" data-i18n="promo_page_inside.description2"></p>
+          <p class="sponsors-article__content__items__description pt-0 mb-0" data-i18n="promo_page_inside.description3"></p>
+          <p class="sponsors-article__content__items__description pt-0 mb-0" data-i18n="promo_page_inside.description4"></p>
+        </div>
+
+        <div class="back-to-top">
+          <a href="#sponsorsPage" class="btn btn-default btn-back-to-top">
+            <img src="assets/images/sponsors/article/hide.png" />
+            <span data-i18n="Back_to_top">Back to top</span>
+          </a>
+        </div>
+        
+        
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 2})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

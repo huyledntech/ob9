@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Promotion'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main promotion">
+      @@include('../components/base/navbar-child.html', {
+        title: 'Promotion', 
+        back_url: false, 
+        help_url: false,
+        nav_expand_url: '../promotion/nav-expand.html'
+      })
+      <div class="promotion__content container-fluid">
+
+        <div class="tab-content promotion__content__tab">
+          <div class="tab-pane fade promotion__content__tab__pane show active" id="promotion-all" role="tabpanel" aria-labelledby="pills-home-tab">
+            @@include('../components/promotion/content/all.html')
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-sports" role="tabpanel" aria-labelledby="promotion-sports-tab">
+            @@include('../components/promotion/content/sports.html')
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-live-casino" role="tabpanel" aria-labelledby="promotion-live-casino-tab">
+            live-casino
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-e-sports" role="tabpanel" aria-labelledby="promotion-e-sports-tab">
+            e-sports
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-lottery" role="tabpanel" aria-labelledby="promotion-lottery-tab">
+            lottery
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-slots" role="tabpanel" aria-labelledby="promotion-slots-tab">
+            slots
+          </div>
+          <div class="tab-pane fade promotion__content__tab__pane" id="promotion-fishing" role="tabpanel" aria-labelledby="promotion-fishing-tab">
+            fishing
+          </div>
+        </div>
+        
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 2})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

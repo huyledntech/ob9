@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'UEFA EURO'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main uefa-euro-block uefa-euro-page perdict-event">
+      <!-- @@include('../components/base/navbar.html') -->
+      @@include('../components/base/navbar-child.html', {back_url: '/', title: 'euro_page.header'})
+
+      <div class="container p-0">
+        <!-- content -->
+        <div id="bannerTab1" class="uefa-euro-page__top-banner" data-i18n="euro_page.top_banner_tab1"></div>
+        <div id="bannerTab2" class="uefa-euro-page__top-banner d-none" data-i18n="euro_page.top_banner_tab2"></div>
+        <div id="bannerTab3" class="uefa-euro-page__top-banner d-none" data-i18n="euro_page.top_banner_tab3"></div>
+        <!-- <div class="uefa-euro-page__top-banner d-block d-lg-none" data-i18n="euro_page.top_banner_mobile"></div> -->
+      </div>
+
+      <!-- content -->
+      <div class="uefa-euro-block__content">
+        <div class="container uefa-euro-page__container">
+          <div class="uefa-euro-page__container__tab">
+            <ul id="euro-nav" class="nav nav-tabs nav-fill" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true" data-i18n="euro_page.PERDICTION_EVENT"></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false" data-i18n="euro_page.MATCH_PREDICTION"></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false" data-i18n="euro_page.PENALTY_SHOOT"></button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                @@include('../components/uefa-euro/tab1.html')
+              </div>
+              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                @@include('../components/uefa-euro/tab2.html')
+              </div>
+              <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                @@include('../components/uefa-euro/tab3.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+
+      <div class="d-block d-lg-none">
+        @@include('../components/base/navbar-bottom.html', {active: -1})
+      </div>
+      
+    </section>
+    <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

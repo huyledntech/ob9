@@ -1,0 +1,39 @@
+<div class="section-content border-radius-bottom mb-3 pb-2">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="Select_Payment_Gateway_Method">Select Payment Gateway Method</div>
+    <div class="deposit-items__content">
+      @@include('../select-payment-gateway.html')
+    </div>
+  </div>
+  <div class="deposit-amount__select-bank" data-bs-toggle="modal" data-bs-target="#selectBankModal">
+    <div class="deposit-amount__select-promotion__input">
+      <div class="deposit-amount__select-promotion__input__label" data-i18n="Select_Bank"></div>
+      <div class="deposit-amount__select-promotion__input__placeholder select-bank-placeholder" data-i18n="Select_payment_gateway_bank_to_deposit"></div>
+    </div>
+    <img src="assets/images/wallet/deposit/right.png" />
+  </div>
+</div>
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="Deposit_Amount">Deposit Amount</div>
+    <div class="deposit-items__content">
+      @@include('../../deposit-amount.html', {
+        hide_attach_button: true,
+        select_promotion: './wallet/select-promotion.html'
+      })
+    </div>
+  </div>
+</div>
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-items">
+    <div class="deposit-items__title" data-i18n="Attention">Attention</div>
+    <div class="deposit-items__content">
+      <ul>
+        <li data-i18n="wallet_page.Attention.payment_gateway.Line_1">Fund deposited from a 3rd party bank account that are <strong class="text-danger">NOT</strong> in your own name or <strong class="text-danger">NOT</strong> registered with OB will <strong class="text-danger">NOT</strong> be accepted.</li>
+        <li data-i18n="wallet_page.Attention.payment_gateway.Line_2">Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed.</li>
+      </ul>
+    </div>
+  </div>
+</div>

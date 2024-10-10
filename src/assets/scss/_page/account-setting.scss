@@ -1,0 +1,90 @@
+.account-setting {
+  background: #f2f2f2;
+  padding-top: 35px;
+
+  @media only screen and (max-width: 425px) {
+    padding-top: 30px;
+  }
+
+  @media only screen and (max-width: 370px) {
+    padding-top: 25px;
+  }
+
+  &__content {
+
+
+    &__info {
+      background-image: url(../images/account-setting/bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 310px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+
+      img {
+        width: 200px;
+      }
+
+      & > div {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__card {
+      padding: 0 15px;
+      margin-top: -30px;
+
+      .list-group {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        border: none;
+        padding: 15px;
+
+        &-item {
+          border: none;
+          border-bottom: 1px solid #999999;
+          border-radius: 0;
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 15px;
+
+          .title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 14px;
+            color: #000000;
+            display: flex;
+            place-content: space-between;
+
+            img {
+              max-width: 25px;
+            }
+          }
+
+          .description {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            color: #999999;
+
+            &.text-danger {
+              color: #FF0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Transaction History '})
+  <body>
+    
+    <!-- Content -->
+    <section class="main transaction-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/wallet', 
+        title: 'transaction_history_title', 
+        nav_expand_url: '../wallet/transaction/nav-expand.html',
+        nav_expand_active_btn: 3,
+        nav_expand_active_btn_text: 'Transfer'
+      })
+      <div class="transaction-history__content history-items container-fluid">
+
+        <div class="items">
+          <div class="items_img">
+            <img src="assets/images/wallet/home/items/5.png" />
+          </div>
+          <div class="items__content">
+            <h3 class="items__content__title">
+              MYR2580.00 <span>(<span data-i18n="Transfer"></span>)</span>
+            </h3>
+            <div class="items__content__subtitle">
+              <span class="items__content__subtitle__time">2022-02-24 10:36:08</span>
+              <span class="items__content__subtitle__status" data-i18n="Approve"></span>
+            </div>
+            <div class="items__content__description row mb-2">
+              <div class="col-3 fw-bold" data-i18n="From"></div>
+              <div class="col-9 fw-light">IGKBET SPORTS</div>
+            </div>
+            <div class="items__content__description row">
+              <div class="col-3 fw-bold" data-i18n="To"></div>
+              <div class="col-9 fw-light">MAIN WALLET</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items">
+          <div class="items_img">
+            <img src="assets/images/wallet/home/items/5.png" />
+          </div>
+          <div class="items__content">
+            <h3 class="items__content__title">
+              MYR720.00<span>(<span data-i18n="Transfer"></span>)</span>
+            </h3>
+            <div class="items__content__subtitle">
+              <span class="items__content__subtitle__time">2022-02-22 16:49:21</span>
+              <span class="items__content__subtitle__status" data-i18n="Approve"></span>
+            </div>
+            <div class="items__content__description row mb-2">
+              <div class="col-3 fw-bold" data-i18n="From"></div>
+              <div class="col-9 fw-light">CQ SLOTS</div>
+            </div>
+            <div class="items__content__description row">
+              <div class="col-3 fw-bold" data-i18n="To"></div>
+              <div class="col-9 fw-light">MAIN WALLET</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

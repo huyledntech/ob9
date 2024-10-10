@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Wallet'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main wallet">
+      @@include('../../components/base/navbar-child.html', {
+        title: 'Wallet', 
+        back_url: '/', 
+        help_url: false,
+        right_expand_icon: '../wallet/nav-right-icon.html',
+        right_expand_icon_url: '/wallet/transaction-history.html',
+      })
+      <div class="wallet__content container-fluid">
+
+        <div class="wallet__content__top w-100">
+          <div class="w-100">
+            <div data-i18n="Total_Balance">Total Balance</div>
+            <h3>MYR 5888.20 <img src="assets/images/new-icons/refresh.png" width="20px" /></h3>
+          </div>
+          
+          <div class="wallet__content__top__icons w-100">
+            <a href="/wallet/deposit.html">
+              <img src="assets/images/MOBILE/deposit.png" />
+              <p data-i18n="Deposit">Deposit</p>
+            </a>
+            <a href="/wallet/withdrawal.html">
+              <img src="assets/images/MOBILE/withdrawal.png" />
+              <p data-i18n="Withdrawal">Withdrawal</p>
+            </a>
+            <a href="/wallet/transaction-history-rebate.html">
+              <img src="assets/images/MOBILE/rebate.png" />
+              <p data-i18n="Rebate">Rebate</p>
+            </a>
+            <a href="/wallet/manage-bank-account.html">
+              <img src="assets/images/new-icons/profile/yuerbaomobile.png" />
+              <p data-i18n="Manage_Bank_Account">Manage <br/>Bank Account</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="wallet__content__bottom">
+          <h4 data-i18n="Recent_Transaction">Recent Transaction</h4>
+
+          <div class="wallet__content__bottom__items">
+            <div class="wallet__content__bottom__items_img">
+              <img src="assets/images/wallet/home/items/1.png" />
+            </div>
+            <div class="wallet__content__bottom__items__content">
+              <h3 class="wallet__content__bottom__items__content__title">
+                MYR100.00 <span>(<span data-i18n="Deposit">Deposit</span>)</span>
+              </h3>
+              <div class="wallet__content__bottom__items__content__subtitle">
+                <span class="wallet__content__bottom__items__content__subtitle__time">2022-02-22 16:49:21</span>
+                <span class="wallet__content__bottom__items__content__subtitle__status" data-i18n="wallet_page.Approve">Approve</span>
+              </div>
+              <div class="wallet__content__bottom__items__content__description" data-i18n="wallet_page.Deposited_from_Maybank">
+                Deposited from Maybank
+              </div>
+            </div>
+          </div>
+
+          <div class="wallet__content__bottom__items">
+            <div class="wallet__content__bottom__items_img">
+              <img src="assets/images/wallet/home/items/2.png" />
+            </div>
+            <div class="wallet__content__bottom__items__content">
+              <h3 class="wallet__content__bottom__items__content__title">
+                MYR100.00 <span>(<span data-i18n="Withdrawal">Withdrawal</span>)</span>
+              </h3>
+              <div class="wallet__content__bottom__items__content__subtitle">
+                <span class="wallet__content__bottom__items__content__subtitle__time">2022-02-22 16:49:21</span>
+                <span class="wallet__content__bottom__items__content__subtitle__status" data-i18n="wallet_page.Approve">Approve</span>
+              </div>
+              <div class="wallet__content__bottom__items__content__description" data-i18n="wallet_page.Withdraw_successful">
+                Withdraw successful
+              </div>
+            </div>
+          </div>
+
+          <div class="wallet__content__bottom__items">
+            <div class="wallet__content__bottom__items_img">
+              <img src="assets/images/wallet/home/items/3.png" />
+            </div>
+            <div class="wallet__content__bottom__items__content">
+              <h3 class="wallet__content__bottom__items__content__title">
+                MYR100.00 <span>(<span data-i18n="Promotion">Promotion</span>)</span>
+              </h3>
+              <div class="wallet__content__bottom__items__content__subtitle">
+                <span class="wallet__content__bottom__items__content__subtitle__time">2022-02-22 16:49:21</span>
+                <span class="wallet__content__bottom__items__content__subtitle__status" data-i18n="wallet_page.Approve">Approve</span>
+              </div>
+              <div class="wallet__content__bottom__items__content__description" data-i18n="wallet_page.New_member_30_free_30">
+                New member 30 free 30
+              </div>
+            </div>
+          </div>
+
+          <div class="wallet__content__bottom__items">
+            <div class="wallet__content__bottom__items_img">
+              <img src="assets/images/wallet/home/items/4.png" />
+            </div>
+            <div class="wallet__content__bottom__items__content">
+              <h3 class="wallet__content__bottom__items__content__title">
+                MYR100.00 <span>(<span data-i18n="Rebate">Rebate</span>)</span>
+              </h3>
+              <div class="wallet__content__bottom__items__content__subtitle">
+                <span class="wallet__content__bottom__items__content__subtitle__time">2022-02-22 16:49:21</span>
+                <span class="wallet__content__bottom__items__content__subtitle__status" data-i18n="wallet_page.Approve">Approve</span>
+              </div>
+              <div class="wallet__content__bottom__items__content__description" data-i18n="wallet_page.Cash_Rebate">
+                Cash Rebate
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Sponsors'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main sponsors">
+      @@include('../../components/base/navbar-child.html', {title: 'Sponsors'})
+      <div class="sponsors__content container-fluid">
+
+        <div class="sponsors_items">
+          <img class="sponsors_items__img" src="assets/images/sponsors/1.png" />
+          <div class="sponsors_items__content">
+            <img class="sponsors_items__content__img" src="assets/images/sponsors/1-1.png" />
+            <div class="sponsors_items__content__title">JUVENTUS FC</div>
+            <div class="sponsors_items__content__subtitle">Official Regional Partner</div>
+            <a href="/sponsors/juventus-article.html" class="btn btn-sm btn-primary sponsors_items__content__more_info" data-i18n="more_info">More Info</a>
+          </div>
+        </div>
+
+        <div class="sponsors_items">
+          <img class="sponsors_items__img" src="assets/images/sponsors/1.png" />
+          <div class="sponsors_items__content">
+            <img class="sponsors_items__content__img" src="assets/images/sponsors/leicester/leicelog.5f44564135cd0c322ab9eb09b80d867d.png" />
+            <div class="sponsors_items__content__title" data-i18n="sponsors_page.LEICESTER_CITY"></div>
+            <div class="sponsors_items__content__subtitle" data-i18n="sponsors_page.Official_Regional_Partner_LEICESTER_CITY"></div>
+            <a href="/sponsors/leicester-article.html" class="btn btn-sm btn-primary sponsors_items__content__more_info" data-i18n="more_info">More Info</a>
+          </div>
+        </div>
+
+        <div class="sponsors_items">
+          <img class="sponsors_items__img" src="assets/images/sponsors/2.png" />
+          <div class="sponsors_items__content">
+            <img class="sponsors_items__content__img" src="assets/images/sponsors/2-1.png" />
+            <div class="sponsors_items__content__title">ASTON VILLA FC</div>
+            <div class="sponsors_items__content__subtitle">Official Global Top Partner</div>
+            <a href="/sponsors/aston-villa-article.html" class="btn btn-sm btn-primary sponsors_items__content__more_info" data-i18n="more_info">More Info</a>
+          </div>
+        </div>
+        
+        
+      </div>
+      @@include('../../components/base/navbar-bottom-without-login.html', {active: 3})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

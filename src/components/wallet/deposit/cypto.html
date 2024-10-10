@@ -1,0 +1,91 @@
+<div class="section-content border-radius-bottom mb-3 pt-2">
+  <div class="best-stable pt-2">
+    <span data-i18n="the_best_stable_coin"></span>
+    <a href="/wallet/deposit-cyptocurrency-introduction.html" data-i18n="Find_out_more"></a>
+  </div>
+</div>
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  
+  
+  <div class="deposit-items mb-0">
+    <div class="deposit-items__title" data-i18n="Crypto_Option"></div>
+    <div class="deposit-items__content">
+      @@include('./crypto-channel.html')
+    </div>
+  </div>
+  
+  <div id="coinpayment-content" class="d-none">
+    <div class="deposit-items pt-3">
+      <div class="deposit-items__title" data-i18n="Crypto_Option"></div>
+      <div class="deposit-items__content">
+        @@include('./crypto-option.html')
+      </div>
+    </div>
+
+    <div id="network-content" class="d-none">
+      <div class="deposit-items">
+        <div class="deposit-items__title d-flex justify-content-between vertical-align-center">
+          <span data-i18n="Network"></span>
+          <a href="/wallet/deposit-compare-network.html" data-i18n="Compare_network"></a>
+        </div>
+        <div class="deposit-items__content">
+          @@include('./network.html')
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<div id="bonuspay-content" class="d-none section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-items mb-5">
+    <div class="deposit-items__title" data-i18n="Deposit_Amount">Deposit Amount</div>
+    <div class="deposit-items__content">
+      @@include('../../deposit-amount.html', {
+        hide_attach_button: true,
+        select_promotion: './wallet/select-promotion.html'
+      })
+    </div>
+  </div>
+</div>
+
+
+<div class="deposit-minimun-crypto" data-i18n="deposit_minimun_crypto"></div>
+
+<div class="section-content border-radius-bottom border-radius-top mb-3 pb-2">
+  <div class="deposit-qr">
+    <div class="deposit-qr__title" data-i18n="Do_not_need_to_enter_deposit_amount"></div>
+    <div><img src="assets/images/wallet/deposit/qr.png" /></div>
+    <a class="deposit-qr__btn btn btn-outline-secondary" data-i18n="SAVE_QR_CODE" href="assets/images/wallet/deposit/qr.png" download></a>
+    <div class="mt-2">
+      <span data-i18n="exchange_rate"></span> 197709.0000
+      <div data-i18n="For_Reference_Only"></div>
+    </div>
+    <div class="deposit-qr__copy">
+      <div class="deposit-qr__copy__item">
+        <div class="deposit-qr__copy__item__title" data-i18n="Wallet_Address"></div>
+        <div class="deposit-qr__copy__item__code">TKkKUdA9XKjjjHFC1pMh6EjyD6jKGpZa89</div>
+      </div>
+      <div class="deposit-qr__copy__item">
+        <button class="btn btn-primary" data-i18n="Copy" data-bs-toggle="modal" data-bs-target="#copySuccessModal"></button>
+      </div>
+    </div>
+    <div id="Memo_copy" class="deposit-qr__copy">
+      <div class="deposit-qr__copy__item">
+        <div class="deposit-qr__copy__item__title" data-i18n="Memo"></div>
+        <div class="deposit-qr__copy__item__code">D63d657bbbd5fb8c</div>
+        <div class="mt-2" style="font-size: 80%" data-i18n="Memo_note"></div>
+      </div>
+      <div class="deposit-qr__copy__item">
+        <button class="btn btn-primary" data-i18n="Copy" data-bs-toggle="modal" data-bs-target="#copySuccessModal"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="deposit-complete">
+  <button class="btn btn-primary" data-i18n="COMPLETE_TRANSFER" data-bs-toggle="modal" data-bs-target="#cryptoDepositSuccessModal"></button>
+  <div data-i18n="Please_contact_our"></div>
+</div>

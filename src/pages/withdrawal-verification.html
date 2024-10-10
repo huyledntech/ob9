@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Withdrawal Verification'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main withdrawal">
+      @@include('../components/base/navbar-child.html', {back_url: '/wallet', title: 'Withdrawal'})
+      <div class="withdrawal__content container-fluid">
+
+        <div class="withdrawal__content__withdrawal-verification">
+          <img class="icon" src="assets/images/SG-verification-page/Sheild.png">
+          <div data-i18n="withdrawal_verification_page.info">Please upload your <span>BANK STATEMENT</span> For verification to unlock<br>withdrawal function</div>
+        </div>
+
+
+        <div class="withdrawal__content__submit">
+          <a href="/add-bank-account-verification.html" class="btn btn-primary withdrawal-submit text-uppercase d-flex justify-content-center align-items-center" data-i18n="withdrawal_verification_page.action"></a>
+        </div>
+
+        
+        <!-- MODAL -->
+        @@include('../components/wallet/withdrawal-success-modal.html')
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

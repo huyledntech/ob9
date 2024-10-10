@@ -1,0 +1,28 @@
+<ul class="nav nav-tabs nav-justified" id="vipDescriptionTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="vipCrashRebase-tab" data-bs-toggle="tab" data-bs-target="#vipCrashRebase" type="button" role="tab" aria-controls="vipCrashRebase" aria-selected="true">
+      <span data-i18n="vip_page.VIP_Cash_Rebate">VIP Cash <br/>Rebate</span>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="vipWithDrawalLimit-tab" data-bs-toggle="tab" data-bs-target="#vipWithDrawalLimit" type="button" role="tab" aria-controls="vipWithDrawalLimit" aria-selected="false">
+      <span data-i18n="vip_page.VIP_Withdrawal_Limit">VIP Withdrawal <br/>Limit</span>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="vipWeeklyAngpow-tab" data-bs-toggle="tab" data-bs-target="#vipWeeklyAngpow" type="button" role="tab" aria-controls="vipWeeklyAngpow" aria-selected="false">
+      <span data-i18n="vip_page.VIP_Weekly_Angpow">VIP Weekly <br/>Angpow</span>
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="vipDescriptionTabContent">
+  <div class="vip-description-items tab-pane fade show active" id="vipCrashRebase" role="tabpanel" aria-labelledby="vipCrashRebase-tab">
+    @@include('./vip-tab-description-crash-rebase.html')
+  </div>
+  <div class="vip-description-items tab-pane fade" id="vipWithDrawalLimit" role="tabpanel" aria-labelledby="vipWithDrawalLimit-tab">
+    @@include('./vip-tab-description-vip-withdrawal-limit.html')
+  </div>
+  <div class="vip-description-items tab-pane fade" id="vipWeeklyAngpow" role="tabpanel" aria-labelledby="vipWeeklyAngpow-tab">
+    @@include('./vip-tab-description-vip-weekly-angpow.html')
+  </div>
+</div>

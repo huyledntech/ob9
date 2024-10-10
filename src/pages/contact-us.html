@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Contact Us'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main help-page help-index contact-us">
+
+      <!-- navbar -->
+      @@include('../components/help/navbar-child.html', {title: 'ONLINE_CUSTOMER_SERVICE', back_url: '/my-account.html'})
+      <!-- navbar -->
+
+
+      <div class="help-page__content">
+        <div class="help-page__content__top">
+          <div class="help-page__content__top__content">
+            <div class="help-page__content__top__content__img">
+              <img src="assets/images/help/help-avatar.png" />
+            </div>
+            <div class="help-page__content__top__content__text">
+              <h3 data-i18n="help_page.hi"></h3>
+              <div data-i18n="help_page.welcome"></div>
+            </div>
+          </div>
+          <div class="help-page__content__top__subtext" data-i18n="help_page.problem"></div>
+          <div class="help-page__content__top__bg"></div>
+        </div>
+        <div class="help-page__content__contact mt-4">
+          <div class="title" data-i18n="contact_us_page.title"></div>
+          <div class="description" data-i18n="contact_us_page.description"></div>
+        </div>
+        <div class="help-page__content__contact">
+          <div class="title" data-i18n="contact_us_page.title1"></div>
+          <div class="description" data-i18n="contact_us_page.description1"></div>
+        </div>
+        <div class="help-page__content__contact">
+          <div class="title" data-i18n="contact_us_page.title2"></div>
+          <div class="description" data-i18n="contact_us_page.description2"></div>
+        </div>
+
+        <div class="help-page__content__footer mt-5" data-i18n="help_page.Need_assitance"></div>
+      </div>
+
+      
+      @@include('../components/base/navbar-bottom.html', {active: 4})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

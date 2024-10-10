@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../../components/base/header.html', {title: 'Betting Record'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main betting-record">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Betting_Record_title', 
+        nav_expand_url: '../my-account/betting-record-nav-expand.html',
+        nav_expand_active_btn: 17,
+        nav_expand_active_btn_text: 'Settled'
+      })
+      <div class="betting-record__content container-fluid">
+
+        <div class="betting-record__content__img">
+          <img src="assets/images/my-account/betting-record/betting-no-data.png" />
+        </div>
+        <div class="betting-record__content__description">
+          Betting record not found
+        </div>
+        <a href="/" class="btn btn-primary" data-i18n="BET_NOW">
+          BET NOW
+        </a>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>
