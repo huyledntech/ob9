@@ -1,12 +1,12 @@
 .daily-mission {
-  padding-bottom: 80px;
+  padding-bottom: 130px;
   padding-top: 60px;
   background-color: #fff;
   font-size: 12px;
 }
 .daily-mission .claim-footer {
   position: fixed;
-  bottom: 0;
+  bottom: 60px;
   left: 0;
   right: 0;
   padding: 5px 15px;
