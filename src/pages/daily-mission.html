@@ -440,12 +440,21 @@
         
       </div>
 
+
+      <div class="claim-footer">
+        <div class="d-flex align-items-center justify-content-center gap-2 w-100">
+          <img src="assets/images/daily-mission/help-icon.png" width="15px" />
+          <div data-i18n="mission_daily.helptext"></div>
+        </div>
+        <button class="btn btn-success" data-i18n="mission_daily.claim_all"></button>
+      </div>
+
       <!-- MODAL -->
       @@include('../components/modal/daily-mission-modal.html')
       <!-- MODAL -->
 
       
-      @@include('../components/base/navbar-bottom.html', {active: 0})
+      <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
     </section>
     
     @@include('../components/base/footer.html')

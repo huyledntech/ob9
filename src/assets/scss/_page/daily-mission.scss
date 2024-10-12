@@ -4,6 +4,25 @@
   background-color: #fff;
   font-size: 12px;
 
+  .claim-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
+
+    .btn {
+      width: 100%;
+      margin-top: 4px;
+      background: rgb(59, 237, 172);
+      background: linear-gradient(100deg, rgba(59, 237, 172, 1) 0%, rgba(27, 253, 161, 1) 100%);
+      border: none;
+    }
+  }
+
   &__content {
 
     &__title {
