@@ -10052,8 +10052,7 @@ a {
   opacity: 0.6;
 }
 .spin-event .spin-top {
-  height: 100vh;
-  min-height: 700px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10069,7 +10068,6 @@ a {
   place-content: center;
   place-items: center;
   margin: auto;
-  padding-bottom: 50px;
 }
 .spin-event .spin-top .frame .frame-img {
   width: 360px;
@@ -10082,7 +10080,7 @@ a {
 }
 .spin-event .spin-top .frame .arrow {
   position: absolute;
-  top: -32%;
+  top: -23%;
   bottom: 0;
   margin: auto;
   cursor: pointer;
@@ -10093,12 +10091,12 @@ a {
   position: absolute;
   font-size: 12px;
   font-weight: 700;
-  bottom: 62px;
+  bottom: 12px;
   padding-right: 20px;
 }
 .spin-event .spin-top .frame .claim-point {
   position: absolute;
-  bottom: 20px;
+  bottom: -30px;
   width: 110px;
   cursor: pointer;
   right: 5px;
