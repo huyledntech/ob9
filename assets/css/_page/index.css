@@ -9986,7 +9986,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
-  line-height: 140%;
+  line-height: 130%;
   font-weight: 700;
   text-transform: uppercase;
   filter: drop-shadow(2px 2px 1px rgba(127, 136, 181, 0.6));
@@ -10279,6 +10279,8 @@
 }
 .affiliates-page .top-session {
   padding-top: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .affiliates-page .top-session .carousel-indicators {
   bottom: 20px;
@@ -10309,32 +10311,28 @@
   position: absolute;
   width: 100%;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 50%;
   left: 50%;
   color: white;
   text-align: center;
+  padding: 50px 10px;
+}
+.affiliates-page .hero-section .hero-content .section-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
 }
 .affiliates-page .proven-success {
   border-radius: 100%;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   transition: all 0.3s ease;
   transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
 }
-.affiliates-page .proven-success:hover {
-  background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
-  box-shadow: 0px 4px 15px 0px rgba(64, 128, 255, 0.2509803922);
-  transform: scale(1.08);
-}
-.affiliates-page .proven-success:hover div {
-  color: #fff !important;
-  background: none !important;
-  -webkit-text-fill-color: #fff !important;
-}
 .affiliates-page .commission-circle {
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   transition: all 0.3s ease;
   transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
   background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
@@ -10343,8 +10341,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 5px;
+  margin-bottom: 5px;
 }
