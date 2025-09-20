@@ -9,8 +9,7 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "node-sass": "^6.0.1"
+    "browser-sync": "^2.26.7"
   },
   "dependencies": {
     "@babel/core": "^7.17.5",
