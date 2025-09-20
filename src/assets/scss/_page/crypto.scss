@@ -1,0 +1,118 @@
+.crypto-page {
+  padding-top: 0px;
+
+  .hero-section {
+    position: relative;
+
+    img {
+      border-radius: 16px;
+      max-height: 100vh;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      top: 40%;
+      left: 50%;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .accordion-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .accordion-item {
+      border: 1px solid rgba(1, 188, 255, 0.2);
+      border-radius: 25px;
+      overflow: hidden;
+      background-color: transparent;
+
+
+      .accordion-header {
+        .accordion-button {
+          font-size: 20px;
+          font-weight: 300;
+          padding: 25px;
+
+          &[aria-expanded="true"] {
+            background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          background-color: transparent;
+          font-size: 16px;
+          line-height: 28px;
+          color: #7981A4;
+        }
+
+        &.show {
+          .accordion-body {}
+        }
+      }
+    }
+  }
+
+  .custom-tabs {
+    .tab-content {
+      margin: 20px 0;
+      border-radius: 25px;
+      overflow: hidden;
+      min-height: 500px;
+    }
+
+    .nav-tabs {
+      border: 1px solid var(--color-blue-89, #D1D5F5);
+      border-radius: 100px;
+      width: fit-content;
+      margin: auto;
+      background-color: #fff;
+      padding: 2px;
+
+      .nav-item {
+        .nav-link {
+          border: none;
+          border-radius: 100px;
+          color: #6C7BA8;
+          padding: 16px 24px;
+          min-width: 190px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          text-transform: uppercase;
+          line-height: 20px;
+
+          &.active {
+            box-shadow: 0px 4px 15px 0px #4080FF40;
+            background-image: url(../icons/btn-bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+
+            &::before {
+              content: "";
+              display: block;
+              width: 20px;
+              height: 20px;
+              background-image: url(../icons/btn-ai-icon.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

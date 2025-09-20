@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Referral'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main new-page referral-page">
+      @@include('../components/base/navbar.html')
+
+      <div class="home__content container-fluid">
+
+        @@include('../components/referral/index.html')
+
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/referral/invite-modal.html')
+      @@include('../components/referral/earnings-modal.html')
+      @@include('../components/referral/search-modal.html')
+      <!-- MODAL -->
+
+      <!-- @@include('../components/world-cup/event-icon.html') -->
+
+      
+      @@include('../components/base/navbar-bottom.html', {active: 0})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

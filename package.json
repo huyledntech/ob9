@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "gulp",
     "start": "gulp",
     "build": "gulp build"
   },

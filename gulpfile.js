@@ -4,7 +4,7 @@ const server = require('browser-sync').create();
 const { watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 // const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
+// sass.compiler = require('node-sass');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 

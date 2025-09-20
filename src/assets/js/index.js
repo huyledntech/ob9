@@ -29,7 +29,7 @@ var translator = new Translator({
   persist: true,
   persistKey: "preferred_language",
   filesLocation: "assets/i18n",
-  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/ob9/main/assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huyledntech/ob9/main/assets/i18n",
 });
 
 const PREFERED_REGION = 'preferred_region';
@@ -887,5 +887,16 @@ $(".spin-event .spin-top .arrow").on("click", function () {
     transform: "rotate(" + degree + "deg)",
   });
 });
+
+window.onscroll = changeNavbar;
+
+function changeNavbar() {
+  var myNavbarMain = $(".my-navbar");
+  if (window.pageYOffset > 30) {
+    myNavbarMain.addClass("scrolled");
+  } else {
+    myNavbarMain.removeClass("scrolled");
+  }
+}
 
 console.log("--- index.jsaaa");

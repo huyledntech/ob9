@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Crypto'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main new-page crypto-page">
+      @@include('../components/base/navbar.html')
+
+      <div class="home__content container-fluid">
+
+        @@include('../components/crypto/index.html')
+
+      </div>
+
+      <!-- MODAL -->
+       @@include('../components/crypto/contact-modal.html')
+      <!-- MODAL -->
+
+      <!-- @@include('../components/world-cup/event-icon.html') -->
+
+      
+      @@include('../components/base/navbar-bottom.html', {active: 0})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

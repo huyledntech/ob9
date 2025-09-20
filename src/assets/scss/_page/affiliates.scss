@@ -1,0 +1,87 @@
+.affiliates-page {
+  padding-top: 0px;
+
+  .top-session {
+    padding-top: 50px;
+
+    .carousel-indicators {
+      bottom: 20px;
+
+      div {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 0 5px;
+        transition: background 0.3s;
+        border: none !important;
+
+        &.active {
+          width: 12px;
+          height: 12px;
+          background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    position: relative;
+
+    img {
+      border-radius: 16px;
+      max-height: 100vh;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      top: 40%;
+      left: 50%;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .proven-success {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease;
+    transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
+      box-shadow: 0px 4px 15px 0px #4080FF40;
+      transform: scale(1.08);
+      
+      div {
+        color: #fff !important;
+        background: none !important;
+        -webkit-text-fill-color: #fff !important;
+      }
+    }
+  }
+
+  .commission-circle {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease;
+    transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
+    background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+}
