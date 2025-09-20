@@ -10300,6 +10300,9 @@ a {
 .new-page .text-gray {
   color: #7981A4;
 }
+.new-page .flex-1 {
+  flex: 1 1 auto;
+}
 .new-page .box-shadow {
   box-shadow: 0px 4px 15px 0px rgba(64, 128, 255, 0.1254901961);
 }
@@ -10317,7 +10320,7 @@ a {
 .new-page .card-base {
   border: 1px solid #C2E2FF;
   border-radius: 16px;
-  padding: 20px;
+  padding: 12px;
 }
 .new-page .bg-gradient1 {
   background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
@@ -10354,7 +10357,7 @@ a {
   background: linear-gradient(0deg, #208CFF 0%, #05C3FD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 38px;
+  font-size: 35px;
   line-height: 140%;
   font-weight: 700;
   text-transform: uppercase;
@@ -10379,24 +10382,11 @@ a {
   will-change: transform;
   transform: translateZ(0);
 }
-.new-page .zoom-effect-container:hover.zoom-shadow {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-.new-page .zoom-effect-container:hover .zoom-effect {
-  transform: scale(1.08);
-  z-index: 2;
-}
 .new-page button {
   transition: transform 300ms ease, box-shadow 300ms ease;
   transform-origin: center center;
   will-change: transform;
   transform: translateZ(0);
-}
-.new-page button:hover {
-  opacity: 0.8;
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  z-index: 2;
 }
 .new-page .btn-gradient {
   box-shadow: 0px 4px 15px 0px rgba(64, 128, 255, 0.2509803922);
@@ -10407,8 +10397,8 @@ a {
   border: none;
   border-radius: 100px;
   color: white;
-  padding: 16px 24px;
-  min-width: 190px;
+  padding: 15px 15px;
+  min-width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10528,16 +10518,17 @@ a {
 .new-page .border-none {
   border: none !important;
 }
-.new-page .line-horizontal {
+.new-page .line-vertical {
   position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  height: 5px;
+  top: 0;
+  bottom: 0;
+  left: 45px;
+  width: 5px;
   border-radius: 10px;
   background: transparent;
   z-index: 1;
   border: 1px solid rgba(1, 188, 255, 0.5);
+  padding: 0;
 }
 
 .referral-page {
@@ -10558,6 +10549,8 @@ a {
 }
 .crypto-page .hero-section {
   position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .crypto-page .hero-section img {
   border-radius: 16px;
@@ -10568,15 +10561,21 @@ a {
   position: absolute;
   width: 100%;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 50%;
   left: 50%;
   color: white;
   text-align: center;
+  padding: 50px 15px;
+}
+.crypto-page .hero-section .hero-content .section-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .crypto-page .accordion-custom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 .crypto-page .accordion-custom .accordion-item {
   border: 1px solid rgba(1, 188, 255, 0.2);
@@ -10585,19 +10584,20 @@ a {
   background-color: transparent;
 }
 .crypto-page .accordion-custom .accordion-item .accordion-header .accordion-button {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 28px;
   font-weight: 300;
-  padding: 25px;
+  padding: 15px;
 }
 .crypto-page .accordion-custom .accordion-item .accordion-header .accordion-button[aria-expanded=true] {
   background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
 }
 .crypto-page .accordion-custom .accordion-item .accordion-collapse .accordion-body {
   background-color: transparent;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 24px;
   color: #7981A4;
 }
 .crypto-page .custom-tabs .tab-content {
@@ -10618,7 +10618,7 @@ a {
   border: none;
   border-radius: 100px;
   color: #6C7BA8;
-  padding: 16px 24px;
+  padding: 12px 24px;
   min-width: 190px;
   display: flex;
   align-items: center;
