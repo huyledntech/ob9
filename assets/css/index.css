@@ -10307,7 +10307,7 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(64, 128, 255, 0.1254901961);
 }
 .new-page .text-gray-gradient {
-  background: linear-gradient(to right, #000 10%, #7981A4 50%, #7981A4 70%, #ddd 100%);
+  background: linear-gradient(to right, #000 10%, #7981A4 50%, #7981A4 70%, #999 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
