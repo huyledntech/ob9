@@ -114,6 +114,9 @@ a {
   padding: 5px !important;
 }
 
+.modal.fade:not(.show) {
+  z-index: -1;
+}
 .modal.slide-up {
   top: auto;
   bottom: 0;

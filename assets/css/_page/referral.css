@@ -34,6 +34,18 @@
 .new-page .bg-gradient2 {
   background: linear-gradient(134.37deg, #C2E2FF 0%, #F0F6FF 100%);
 }
+.new-page .bg-gradient2__to-b {
+  background: linear-gradient(180deg, #C2E2FF 0%, #F0F6FF 100%) !important;
+}
+.new-page .bg-gradient3 {
+  background: linear-gradient(180deg, #C2E2FF 0%, #F0F6FF 80%, #fff 100%) !important;
+}
+.new-page .bg-gradient4 {
+  background: linear-gradient(180deg, #E6F3FF 0%, #F0F6FF 100%);
+}
+.new-page .bg-gradient5 {
+  background: linear-gradient(180deg, #FFFFFF 0%, #CDE7FF 100%);
+}
 .new-page .border-top-radius-none {
   border-top-left-radius: 0;
   border-top-right-radius: 0;

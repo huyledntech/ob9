@@ -125,6 +125,10 @@ a {
 }
 
 .modal {
+  &.fade:not(.show) {
+    z-index: -1;
+  }
+  
   &.slide-up {
     top: auto;
     bottom: 0;
