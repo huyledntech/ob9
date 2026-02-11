@@ -641,6 +641,118 @@
       }
     }
   }
+
+  .home-page__realbet {
+
+    &__icon {
+      position: fixed;
+      bottom: 20%;
+      right: 0;
+      z-index: 999;
+
+      &.hide {
+        display: none;
+      }
+
+      &>img {
+        width: 15px;
+      }
+    }
+
+    &__popup {
+      position: fixed;
+      bottom: 10%;
+      right: 4px;
+      z-index: 999;
+      opacity: 0;
+      margin-right: -100%;
+      transition: all 0.5s;
+      -webkit-box-shadow: 1px 4px 2px 2px #1B4ED8;
+      box-shadow: 1px 4px 2px 2px #1B4ED8;
+      border-radius: 20px;
+
+      &.active {
+        opacity: 1;
+        margin-right: 0;
+      }
+
+      .challenge-card {
+        color: white;
+        text-align: center;
+        position: relative;
+        border-radius: 20px;
+
+        &__header {
+          background: linear-gradient(180deg, #177ee6, #2445b7);
+          padding: 15px 10px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        .show-icon {
+          position: absolute;
+          top: 25px;
+          left: -20px;
+          width: 20px;
+        }
+      }
+
+      .challenge-title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .trophy {
+        width: 90px;
+        margin: 20px auto;
+      }
+
+      .stats-box {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 15px 10px;
+        color: #000;
+        background-color: #fff;
+      }
+
+      .stats-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        line-height: 20px;
+      }
+
+      .stats-row span.value {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1e6bff;
+      }
+
+      .progress {
+        height: 8px;
+        border-radius: 10px;
+        margin: 10px 0;
+        background-color: rgb(211 232 255);
+        ;
+      }
+
+      .progress-bar {
+        background: linear-gradient(90deg, #1e6bff, #5aa2ff);
+      }
+
+      .total-bonus {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+      }
+
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {

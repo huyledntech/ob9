@@ -1501,6 +1501,97 @@ a {
   text-align: center;
   min-height: 40px;
 }
+.home .home-page__realbet__icon {
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  z-index: 999;
+}
+.home .home-page__realbet__icon.hide {
+  display: none;
+}
+.home .home-page__realbet__icon > img {
+  width: 15px;
+}
+.home .home-page__realbet__popup {
+  position: fixed;
+  bottom: 10%;
+  right: 4px;
+  z-index: 999;
+  opacity: 0;
+  margin-right: -100%;
+  transition: all 0.5s;
+  -webkit-box-shadow: 1px 4px 2px 2px #1B4ED8;
+  box-shadow: 1px 4px 2px 2px #1B4ED8;
+  border-radius: 20px;
+}
+.home .home-page__realbet__popup.active {
+  opacity: 1;
+  margin-right: 0;
+}
+.home .home-page__realbet__popup .challenge-card {
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+}
+.home .home-page__realbet__popup .challenge-card__header {
+  background: linear-gradient(180deg, #177ee6, #2445b7);
+  padding: 15px 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.home .home-page__realbet__popup .challenge-card .show-icon {
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  width: 20px;
+}
+.home .home-page__realbet__popup .challenge-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home .home-page__realbet__popup .trophy {
+  width: 90px;
+  margin: 20px auto;
+}
+.home .home-page__realbet__popup .stats-box {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 15px 10px;
+  color: #000;
+  background-color: #fff;
+}
+.home .home-page__realbet__popup .stats-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 20px;
+}
+.home .home-page__realbet__popup .stats-row span.value {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1e6bff;
+}
+.home .home-page__realbet__popup .progress {
+  height: 8px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: rgb(211, 232, 255);
+}
+.home .home-page__realbet__popup .progress-bar {
+  background: linear-gradient(90deg, #1e6bff, #5aa2ff);
+}
+.home .home-page__realbet__popup .total-bonus {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+}
 
 @media only screen and (max-width: 425px) {
   .home__content #carouselHome .carousel-indicators {
@@ -10020,6 +10111,10 @@ a {
   box-shadow: -1px -1px 10px 0px #999;
   -webkit-box-shadow: -1px -1px 10px 0px #999;
   -moz-box-shadow: -1px -1px 10px 0px #999;
+}
+.daily-mission__content .mission-item .btn-claim1 {
+  background: rgb(253, 138, 6);
+  background: linear-gradient(100deg, rgb(253, 138, 6) 0%, rgb(255, 59, 1) 100%);
 }
 .daily-mission__content .mission-item .progress {
   width: 150px;
