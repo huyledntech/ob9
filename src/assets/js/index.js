@@ -904,7 +904,9 @@ $('#realbet-icon').on('click', function () {
   $('#realbet-icon').addClass('hide');
 });
 
-$('#realbet-show-icon').on('click', function () {
+$('#realbet-show-icon').on('click', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
   $('#realbet-popup').removeClass('active');
   $('#realbet-icon').removeClass('hide');
 });
